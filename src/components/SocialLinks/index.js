@@ -1,12 +1,12 @@
-import React from 'react';
-import config from '../../../config';
+import React from "react";
+import config from "../../../config";
 
-export default function SocialLinks() {
+const SocialLinks = () => {
   return (
     <section className="contact-section bg-primary">
       <div className="container">
         <div className="social d-flex justify-content-center">
-          {config.socialLinks.map(social => {
+          {config.socialLinks.map((social) => {
             const { icon, url } = social;
             return (
               <a key={url} href={url} className={`mx-2`}>
@@ -18,4 +18,6 @@ export default function SocialLinks() {
       </div>
     </section>
   );
-}
+};
+
+export default SocialLinks;

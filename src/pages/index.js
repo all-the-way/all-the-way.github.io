@@ -7,7 +7,7 @@ import SocialLinks from "../components/SocialLinks";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import About from "../components/About";
-import Packages from "../components/Packages";
+import Offering from "../components/Offering";
 
 const IndexPage = () => (
   <Layout>
@@ -40,7 +40,7 @@ const IndexPage = () => (
 
     <About></About>
 
-    <Packages></Packages>
+    <Offering></Offering>
 
     <Contact />
     <SocialLinks />

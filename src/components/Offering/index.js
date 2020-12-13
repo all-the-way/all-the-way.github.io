@@ -1,13 +1,13 @@
 import React from "react";
 import Scroll from "../Scroll";
 
-const Packages = () => {
+const Offering = () => {
   return (
     <section id="utbud" className="packages-section">
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
-            <h3 className="small">Platser är begränsade</h3>
+            <h3 className="small">Platserna är begränsade</h3>
             <h2 className="heading">Vi erbjuder dig</h2>
           </div>
         </div>
@@ -84,4 +84,4 @@ const Packages = () => {
   );
 };
 
-export default Packages;
+export default Offering;
