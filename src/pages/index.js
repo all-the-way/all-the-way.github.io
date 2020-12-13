@@ -17,7 +17,7 @@ const IndexPage = () => (
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
           <h1 className="mx-auto my-0 text-uppercase">
-            2021 öppnar vi i Berga, Helsingborg
+            2021 öppnar vi på Berga, Helsingborg
           </h1>
           <Scroll type="id" element="intresseanmalan">
             <a href="#intresseanmalan" className="btn btn-primary">
