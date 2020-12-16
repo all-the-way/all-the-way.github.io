@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "./icon_white.png";
 
 const Contact = ({ fullHeight }) => {
   const [firstName, setFirstName] = useState("");
@@ -43,8 +44,16 @@ const Contact = ({ fullHeight }) => {
   };
 
   return (
-    <section id="intresseanmalan" className="signup-section">
+    <section
+      id="intresseanmalan"
+      className={`${"signup-section"} ${fullHeight ? "logo" : ""}`}
+    >
       <div className={`container ${fullHeight ? "full-height" : ""}`}>
+        {fullHeight && (
+          <div className="row d-flex justify-content-center">
+            <img src={logo} alt="logotype"></img>
+          </div>
+        )}
         {!submitted && (
           <React.Fragment>
             <div className="row">
@@ -110,12 +119,14 @@ const Contact = ({ fullHeight }) => {
                 />
               </div>
             </div>
-            <button
-              className="btn btn-primary float-right"
-              onClick={(e) => handleSubmit(e)}
-            >
-              Skicka
-            </button>
+            <div className="d-flex justify-content-end">
+              <button
+                className="btn btn-primary float-right"
+                onClick={(e) => handleSubmit(e)}
+              >
+                Skicka
+              </button>
+            </div>
           </React.Fragment>
         )}
 

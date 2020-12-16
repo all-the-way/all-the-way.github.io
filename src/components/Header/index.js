@@ -35,7 +35,7 @@ const Header = () => {
     >
       <div className="container">
         <div className="navbar-brand" onClick={() => window.scrollTo(0, 0)}>
-          <img src={logo} className="logo"></img>
+          <img src={logo} className="logo" alt="logotype"></img>
         </div>
         <button
           onClick={(_) => toggleMenu(!openMenu)}

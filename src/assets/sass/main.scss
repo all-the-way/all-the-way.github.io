@@ -23,6 +23,11 @@ body {
   text-transform: uppercase !important;
   font-weight: 600 !important;
   color: $primary;
+  font-size: 1.7rem;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 }
 a {
   color: $primary;

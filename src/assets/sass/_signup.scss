@@ -11,6 +11,12 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  &.logo {
+    padding: 1rem 0;
+    img {
+      max-width: 300px;
+    }
+  }
   .form-inline {
     input {
       box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
