@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Contact from "../components/Contact";
 
-const AnsokanPage = () => {
+const ApplicationPage = () => {
   return (
     <Layout>
       <div className="application">
@@ -12,4 +12,4 @@ const AnsokanPage = () => {
   );
 };
 
-export default AnsokanPage;
+export default ApplicationPage;

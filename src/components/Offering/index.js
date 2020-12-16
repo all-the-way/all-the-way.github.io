@@ -20,11 +20,11 @@ const Offering = () => {
                 <hr className="my-4" />
                 <div className="small text-black-50">
                   <p>
-                    Med stora utrymmen, välutrustad maskinpark och varierande
-                    redskap i toppkvalité med senaste teknologin ser vi till att
-                    möta dina förväntningar och behov. Gymmet är utrustat för
-                    att du ska kunna känna dig trygg men även utveckla dig själv
-                    över tid.
+                    Vi erbjuder en välutrustad maskinpark med den senaste
+                    teknologin, varierande redskap i toppkvalité och generösa
+                    utrymmen. Gymmet är utrustat för att du ska kunna känna dig
+                    trygg och utveckla dig själv över tid. ATW – ett gym som
+                    måste upplevas.
                   </p>
                 </div>
               </div>
@@ -39,11 +39,11 @@ const Offering = () => {
                 <hr className="my-4" />
                 <div className="small text-black-50">
                   <p>
-                    Att du ska lyckas med din målsättning är något av det
-                    viktigaste för oss. Därför erbjuder vi dig personlig träning
-                    så du inte behöver gissa dig fram. Våra PTs utbildas
+                    Som medlem på ATW i Helsingborg erbjuder vi dig Personlig
+                    Träning av högsta kvalité. Målet. Våra PTs utbildas
                     regelbundet för att kunna förse dig med den senaste
-                    kunskapen inom hälsa, träning och kost. 
+                    kunskapen inom hälsa, träning och kost för att du ska lyckas
+                    med ditt hälsomål.
                   </p>
                 </div>
               </div>
@@ -58,11 +58,10 @@ const Offering = () => {
                 <hr className="my-4" />
                 <div className="small text-black-50">
                   <p>
-                    Träna i en grupp med likasinnade personer med samma
-                    målsättningar. Gruppen styrs av en PT och ni kommer vara
-                    minst tre men max sex personer. Detta gör att PTn som
-                    hjälper dig fortfarande kan göra coachingen individanpassad
-                    efter dina behov och förutsättningar.
+                    TEAM – Together everyone achieves more. Träna tillsammans
+                    med 4-6 deltagare i ett TEAM. Vi peppar varandra, har roligt
+                    tillsammans och uppnår ett gemensamt träningsmål. Fråga oss
+                    för mer information.
                   </p>
                 </div>
               </div>

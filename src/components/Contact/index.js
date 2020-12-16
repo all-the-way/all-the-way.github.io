@@ -56,7 +56,7 @@ const Contact = ({ fullHeight }) => {
                   className="text-white text-uppercase mb-5"
                   style={{ fontSize: 16 }}
                 >
-                  Dörrarna stängs i maj
+                  Begränsat antal platser
                 </h3>
               </div>
             </div>
