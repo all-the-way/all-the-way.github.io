@@ -7,6 +7,17 @@ const Header = () => {
   const [visibilityClass, setVisibilityClass] = useState("");
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        if (visibilityClass !== "navbar-shrink") {
+          setVisibilityClass("navbar-shrink");
+        }
+      } else {
+        if (visibilityClass === "navbar-shrink") {
+          setVisibilityClass("");
+        }
+      }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -15,18 +26,6 @@ const Header = () => {
 
   const toggleMenu = (value) => {
     setOpenMenu(value);
-  };
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 300) {
-      if (visibilityClass !== "navbar-shrink") {
-        setVisibilityClass("navbar-shrink");
-      }
-    } else {
-      if (visibilityClass === "navbar-shrink") {
-        setVisibilityClass("");
-      }
-    }
   };
 
   return (
