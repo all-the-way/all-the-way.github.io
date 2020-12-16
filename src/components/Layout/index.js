@@ -23,13 +23,12 @@ const Layout = ({ children }) => {
             meta={[
               {
                 name: "description",
-                content:
-                  "Med glimten i ögat och ett driv för resultat så ser jag till att din träning går framåt men också är rolig på samma gång. Med över 10 000 timmar på golvet med kunder så har jag fått chansen att utveckla träning och kostupplägg för att det ska passa kundens behov och förutsättningar. Tillsammans hittar vi vägen för att du ska lyckas.",
+                content: "Ditt premiumgym på Berga, Helsingborg.",
               },
               {
                 name: "keywords",
                 content:
-                  "Personlig träning, Personlig tränare, Personlig Tränare lund, onlinecoach, PT online, träningsprogram, kostprogram, kostupplägg, viktnedgång, Uteträning, uteträning lund, företagshälsa, friskvård",
+                  "gym, gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård",
               },
             ]}
           >
@@ -60,6 +59,7 @@ const Layout = ({ children }) => {
             <meta name="msapplication-TileColor" content="#1f5d81" />
             <meta name="theme-color" content="#1f5d81" />
           </Helmet>
+
           <div className={"page-top"}>{children}</div>
         </>
       )}
