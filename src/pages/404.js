@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 const IndexPage = () => (
   <Layout>
     <Helmet title="All The Way: Sidan kunde inte hittas"></Helmet>
-    <Header />
+    <Header logoOnly />
     <header className="masthead">
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">

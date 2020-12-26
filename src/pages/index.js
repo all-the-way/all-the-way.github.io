@@ -28,6 +28,8 @@ const IndexPage = () => (
       </div>
     </header>
 
+    <About></About>
+    <Offering></Offering>
     <section className="quote-section text-center">
       <div className="container">
         <div className="row">
@@ -37,11 +39,6 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-
-    <About></About>
-
-    <Offering></Offering>
-
     <Contact />
     <SocialLinks />
     <Footer />

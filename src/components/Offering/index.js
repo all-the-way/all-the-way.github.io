@@ -21,7 +21,7 @@ const Offering = () => {
                 <div className="small text-black-50">
                   <p>
                     Vi erbjuder en välutrustad maskinpark med den senaste
-                    teknologin, varierande redskap i toppkvalité och generösa
+                    teknologin, varierade redskap i toppkvalité och generösa
                     utrymmen. Gymmet är utrustat för att du ska kunna känna dig
                     trygg och utveckla dig själv över tid. ATW – ett gym som
                     måste upplevas.
@@ -39,8 +39,9 @@ const Offering = () => {
                 <hr className="my-4" />
                 <div className="small text-black-50">
                   <p>
-                    Som medlem på ATW i Helsingborg erbjuder vi dig Personlig
-                    Träning av högsta kvalité. Målet. Våra PTs utbildas
+                    För oss är det viktigt att du når din målsättning.
+                    Tillsammans med en PT så får du individanpassad hjälp för
+                    att göra träningen rolig och utmanade. Våra PTs utbildas
                     regelbundet för att kunna förse dig med den senaste
                     kunskapen inom hälsa, träning och kost för att du ska lyckas
                     med ditt hälsomål.
@@ -59,9 +60,10 @@ const Offering = () => {
                 <div className="small text-black-50">
                   <p>
                     TEAM – Together everyone achieves more. Träna tillsammans
-                    med 4-6 deltagare i ett TEAM. Vi peppar varandra, har roligt
-                    tillsammans och uppnår ett gemensamt träningsmål. Fråga oss
-                    för mer information.
+                    med fyra till sex deltagare i ett TEAM. Vi peppar varandra,
+                    har roligt tillsammans och uppnår ett gemensamt träningsmål.
+                    Allt under ledning utav en personlig tränare! Fråga oss för
+                    mer information.
                   </p>
                 </div>
               </div>
