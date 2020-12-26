@@ -1,6 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { CookiesProvider } from "react-cookie";
 import { StaticQuery, graphql } from "gatsby";
+import CookieBanner from "../CookieBanner";
 
 import "../../assets/sass/main.scss";
 
@@ -58,31 +60,11 @@ const Layout = ({ children }) => {
             />
             <meta name="msapplication-TileColor" content="#1f5d81" />
             <meta name="theme-color" content="#1f5d81" />
-            {/* <!-- Facebook Pixel Code --> */}
-            <script>
-              {`!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '871538353609114');
-fbq('track', 'PageView');`}
-            </script>
-            <noscript>
-              {`<img
-                height="1"
-                width="1"
-                style="display:none"
-                src="https://www.facebook.com/tr?id=871538353609114&ev=PageView&noscript=1"
-              />`}
-            </noscript>
-            {/* <!-- End Facebook Pixel Code --> */}
           </Helmet>
-
-          <div className={"page-top"}>{children}</div>
+          <CookiesProvider>
+            <div className={"page-top"}>{children}</div>
+            <CookieBanner></CookieBanner>
+          </CookiesProvider>
         </>
       )}
     />

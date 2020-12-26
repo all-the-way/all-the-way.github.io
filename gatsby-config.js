@@ -8,6 +8,21 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleTagManager: {
+          trackingId: "GTM-MLC3G5D",
+          cookieName: "acceptCookie",
+          dataLayerName: "dataLayer",
+        },
+        facebookPixel: {
+          pixelId: "871538353609114",
+          cookieName: "acceptCookie",
+        },
+        environments: ["production"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: config.manifestName,
@@ -17,14 +32,6 @@ module.exports = {
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,
         icon: config.manifestIcon, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-MLC3G5D",
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
       },
     },
     "gatsby-plugin-sass",
