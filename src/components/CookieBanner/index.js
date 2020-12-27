@@ -23,10 +23,11 @@ const CookieBanner = () => {
   return (
     <div className="fixed-bottom cookie-banner text-center d-flex align-items-center justify-content-between flex-column flex-md-row">
       <span>
-        Vi använder cookies - genom att använda denna sida eller stänga detta
-        meddelande accepterar du vår cookiepolicy.{" "}
+        Vi använder cookies, tyvärr är de inte ätbara - Genom att använda denna
+        sida eller stänga detta meddelande accepterar du vår cookiepolicy.{" "}
         <Link to="/cookies">Läs mer</Link>
       </span>
+
       <button
         className="btn btn-primary float-right mt-2"
         onClick={handleAcceptCookies}

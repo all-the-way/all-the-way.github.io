@@ -51,7 +51,7 @@ const Contact = ({ fullHeight }) => {
       <div className={`container ${fullHeight ? "full-height" : ""}`}>
         {fullHeight && (
           <div className="row d-flex justify-content-center">
-            <img src={logo} alt="logotype"></img>
+            <img src={logo} alt="Logotype för All The Way"></img>
           </div>
         )}
         {!submitted && (

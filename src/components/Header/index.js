@@ -96,7 +96,7 @@ const Header = ({ logoOnly = false }) => {
     >
       <div className="container">
         <Link to="/" className="navbar-brand">
-          <img src={logo} className="logo" alt="logotype"></img>
+          <img src={logo} className="logo" alt="Logotype för All The Way"></img>
         </Link>
 
         {!logoOnly && renderMenu()}

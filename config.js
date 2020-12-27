@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "All The Way", // <title>
+  siteTitle: "Gym i Helsingborg - All The Way", // <title>
   manifestName: "All The Way",
   manifestShortName: "All The Way", // max 12 characters
   manifestStartUrl: "/",

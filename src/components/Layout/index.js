@@ -21,16 +21,17 @@ const Layout = ({ children }) => {
       render={(data) => (
         <>
           <Helmet
-            title={data.site.siteMetadata.title}
+            title="All The Way - Exklusivt gym i Helsingborg"
             meta={[
               {
                 name: "description",
-                content: "Ditt premiumgym på Berga, Helsingborg.",
+                content:
+                  "Bli medlem hos All The Way Helsingborg. Tillsammans gör vi en personlig hälsoplan så att du når dina mål! Du hittar oss på Berga, Helsingborg.",
               },
               {
                 name: "keywords",
                 content:
-                  "gym, gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård",
+                  "gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård",
               },
             ]}
           >
