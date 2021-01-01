@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import Offering from "../components/Offering";
+import References from "../components/References";
 
 const IndexPage = () => (
   <Layout>
@@ -30,15 +31,7 @@ const IndexPage = () => (
 
     <About></About>
     <Offering></Offering>
-    <section className="quote-section text-center">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 mx-auto">
-            <p>En start med små steg är början på en större förändring</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <References></References>
     <Contact />
     <SocialLinks />
     <Footer />
