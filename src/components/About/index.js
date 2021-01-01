@@ -20,9 +20,14 @@ const About = () => {
                 Exklusivt gym i Helsingborg med unik service och miljö
               </h2>
               <p className="text-black-50 mb-3">
-                Vi vill att du ska lyckas med din träning. Därför bjuder vi in
-                dig på en personlig hälsoplan och privat visning. Du får chansen
-                att se något nytt växa fram i Helsingborg men även i gymvärlden.
+                Vi vill att du skall lyckas med din träning! Därför bjuder vi in
+                dig på en personlig hälsoplan där ni, tillsammans med en av våra
+                rådgivare, går igenom var du befinner dig just nu i din
+                träningsresa. Utöver detta får du även en personlig rundtur av
+                gymmet och får möjlighet att ställa frågor om oss på ATW i
+                Helsingborg. Allt för att du skall känna dig så trygg som
+                möjligt inför starten, eller fortsättningen, på din
+                träningsresa!
               </p>
             </div>
           </div>
