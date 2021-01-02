@@ -7,7 +7,7 @@ const Offering = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
-            <h3 className="small">Platserna är begränsade</h3>
+            <p className="small">Platserna är begränsade</p>
             <h2 className="heading">Vi erbjuder dig</h2>
           </div>
         </div>
@@ -16,9 +16,9 @@ const Offering = () => {
             <div className="card py-4 h-100">
               <div className="card-body text-center">
                 <i className="fas fa-building text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">Gym</h4>
+                <h3 className="text-uppercase m-0">Gym</h3>
                 <hr className="my-4" />
-                <div className="small text-black-50">
+                <div className="small text-black">
                   <p>
                     Vi erbjuder en välutrustad maskinpark med den senaste
                     teknologin, varierade redskap i toppkvalité och generösa
@@ -35,9 +35,9 @@ const Offering = () => {
             <div className="card py-4 h-100">
               <div className="card-body text-center">
                 <i className="fas fa-dumbbell text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">PT</h4>
+                <h3 className="text-uppercase m-0">PT</h3>
                 <hr className="my-4" />
-                <div className="small text-black-50">
+                <div className="small text-black">
                   <p>
                     För oss är det viktigt att du når din målsättning.
                     Tillsammans med en PT så får du individanpassad hjälp för
@@ -55,9 +55,9 @@ const Offering = () => {
             <div className="card py-4 h-100">
               <div className="card-body text-center">
                 <i className="fas fa-users text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">Team</h4>
+                <h3 className="text-uppercase m-0">Team</h3>
                 <hr className="my-4" />
-                <div className="small text-black-50">
+                <div className="small text-black">
                   <p>
                     TEAM – Together everyone achieves more. Träna tillsammans
                     med fyra till sex deltagare i ett TEAM. Vi peppar varandra,

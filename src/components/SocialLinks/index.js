@@ -7,9 +7,9 @@ const SocialLinks = () => {
       <div className="container">
         <div className="social d-flex justify-content-center">
           {config.socialLinks.map((social) => {
-            const { icon, url } = social;
+            const { icon, url, name } = social;
             return (
-              <a key={url} href={url} className={`mx-2`}>
+              <a key={url} href={url} className={`mx-2`} title={name}>
                 <i className={`fab ${icon}`}></i>
               </a>
             );

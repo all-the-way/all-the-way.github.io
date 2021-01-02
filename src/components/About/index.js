@@ -19,7 +19,7 @@ const About = () => {
               <h2 className="heading">
                 Exklusivt gym i Helsingborg med unik service och miljö
               </h2>
-              <p className="text-black-50 mb-3">
+              <p className="text-black mb-3">
                 Vi vill att du skall lyckas med din träning! Därför bjuder vi in
                 dig på en personlig hälsoplan där ni, tillsammans med en av våra
                 rådgivare, går igenom var du befinner dig just nu i din
