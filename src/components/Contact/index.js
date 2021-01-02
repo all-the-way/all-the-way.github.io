@@ -7,6 +7,7 @@ const Contact = ({ fullHeight }) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [hasErrors, setHasErrors] = useState(false);
 
   const handleChangeFirstName = (e) => {
     setFirstName(e.target.value);
@@ -26,6 +27,11 @@ const Contact = ({ fullHeight }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!firstName || !lastName || !email || !phone) {
+      setHasErrors(true);
+      return;
+    }
 
     var formData = new FormData();
     formData.append("entry.17082701", firstName);
@@ -80,6 +86,7 @@ const Contact = ({ fullHeight }) => {
                   id="firstName"
                   value={firstName}
                   onChange={(e) => handleChangeFirstName(e)}
+                  required
                 />
               </div>
               <div className="form-group col-md-6">
@@ -92,6 +99,7 @@ const Contact = ({ fullHeight }) => {
                   id="lastName"
                   value={lastName}
                   onChange={(e) => handleChangeLastName(e)}
+                  required
                 />
               </div>
               <div className="form-group col-md-6">
@@ -104,6 +112,7 @@ const Contact = ({ fullHeight }) => {
                   id="email"
                   value={email}
                   onChange={(e) => handleChangeEmail(e)}
+                  required
                 />
               </div>
               <div className="form-group col-md-6">
@@ -116,9 +125,15 @@ const Contact = ({ fullHeight }) => {
                   id="phone"
                   value={phone}
                   onChange={(e) => handleChangePhone(e)}
+                  required
                 />
               </div>
             </div>
+            {hasErrors && (
+              <p className="text-white">
+                Vänligen fyll i alla fält innan du skickar din ansökan.
+              </p>
+            )}
             <div className="d-flex justify-content-end">
               <button
                 className="btn btn-primary float-right"
@@ -136,6 +151,7 @@ const Contact = ({ fullHeight }) => {
               <h2 className="heading text-white">
                 Tack för din intresseanmälan!
               </h2>
+              <p className="text-white">Vi återkopplar inom 48 timmar.</p>
             </div>
           </div>
         )}

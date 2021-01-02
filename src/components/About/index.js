@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="row no-gutters d-flex justify-content-end mb-4 mb-lg-5">
+        <div className="row no-gutters d-flex justify-content-center justify-content-lg-end mb-4 mb-lg-5">
           <Scroll type="id" element="intresseanmalan">
             <a href="#intresseanmalan" className="btn btn-primary">
               Boka visning
