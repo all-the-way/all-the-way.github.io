@@ -7,7 +7,7 @@ const References = () => {
     <section className="text-center references-section">
       <div className="row">
         <div className="col-sm-12">
-          <h2 className="small">
+          <h2 style={{ fontSize: 16 }}>
             Referenser från tidigare kunder till anställda på All The Way
           </h2>
           <Carousel

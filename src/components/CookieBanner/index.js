@@ -26,10 +26,11 @@ const CookieBanner = () => {
         <p>Vi använder cookies, tyvärr är dessa inte ätbara 🍪</p>
         <p>
           Genom att använda denna sida eller stänga detta meddelande accepterar
-          du vår cookiepolicy.{" "}
+          du vår{" "}
           <Link to="/cookies" title="Cookie Policy">
-            Läs mer
+            cookiepolicy
           </Link>
+          .
         </p>
       </span>
 

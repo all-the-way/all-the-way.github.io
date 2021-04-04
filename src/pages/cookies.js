@@ -7,7 +7,13 @@ import Header from "../components/Header";
 
 const CookiesPage = () => (
   <Layout>
-    <Helmet title="All The Way: Policy för användning av cookies"></Helmet>
+    <Helmet title="All The Way: Policy för användning av cookies">
+      <meta
+        name="description"
+        content="För att optimera din upplevelse på denna webbplats använder All
+        The Way cookies."
+      />
+    </Helmet>
     <Header logoOnly />
     <section style={{ marginTop: 100 }}>
       <div className="container">

@@ -20,21 +20,15 @@ const Layout = ({ children }) => {
       `}
       render={(data) => (
         <>
-          <Helmet
-            title="All The Way - Exklusivt gym i Helsingborg"
-            meta={[
-              {
-                name: "description",
-                content:
-                  "Bli medlem hos All The Way Helsingborg. Tillsammans gör vi en personlig hälsoplan så att du når dina mål! Du hittar oss på Berga, Helsingborg.",
-              },
-              {
-                name: "keywords",
-                content:
-                  "gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård",
-              },
-            ]}
-          >
+          <Helmet title="All The Way - Exklusivt gym i Helsingborg">
+            <meta
+              name="description"
+              content="Bli medlem hos All The Way Helsingborg. Tillsammans gör vi en personlig hälsoplan så att du når dina mål! Du hittar oss på Berga, Helsingborg."
+            />
+            <meta
+              name="keywords"
+              content="gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård"
+            />
             <html lang="sv" />
             <link
               rel="apple-touch-icon"
