@@ -1,4 +1,5 @@
-.references-section {
+@import "../../styles/variables.scss";
+.referencesSection {
   background: $secondary;
   padding: 5rem 0;
   overflow: hidden;
@@ -11,7 +12,7 @@
 
   .carousel {
     .slide {
-      background: $secondary;
+      background: $secondary !important;
     }
   }
 }

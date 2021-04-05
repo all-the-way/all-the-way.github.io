@@ -1,10 +1,11 @@
 import React from "react";
 import Scroll from "../Scroll";
-import aboutImage from "../../assets/images/about.png";
+import aboutImage from "./about.png";
+import styles from "./about.module.scss";
 
 const About = () => {
   return (
-    <section id="upplev-oss" className="projects-section bg-light">
+    <section id="upplev-oss" className={styles.container}>
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-6 col-lg-4">
@@ -15,7 +16,7 @@ const About = () => {
             />
           </div>
           <div className="col-xl-6 col-lg-8">
-            <div className="featured-text text-center text-lg-left">
+            <div className={`${styles.featuredText} text-center text-lg-left`}>
               <h2 className="heading">
                 Exklusivt gym i Helsingborg med unik service och miljö
               </h2>

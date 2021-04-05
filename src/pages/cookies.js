@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 import Helmet from "react-helmet";
 import Footer from "../components/Footer";
 import SocialLinks from "../components/SocialLinks";
-import Header from "../components/Header";
-
+import Menu from "../components/Menu";
 const CookiesPage = () => (
   <Layout>
     <Helmet title="All The Way: Policy för användning av cookies">
@@ -14,8 +13,8 @@ const CookiesPage = () => (
         The Way cookies."
       />
     </Helmet>
-    <Header logoOnly />
-    <section style={{ marginTop: 100 }}>
+    <Menu external />
+    <section style={{ marginTop: 150 }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">

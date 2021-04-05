@@ -1,11 +1,12 @@
 import React from "react";
 import config from "../../../config";
+import styles from "./socialLinks.module.scss";
 
 const SocialLinks = () => {
   return (
-    <section className="contact-section bg-primary">
+    <section className={`${styles.contactSection} bg-primary`}>
       <div className="container">
-        <div className="social d-flex justify-content-center">
+        <div className={`${styles.social} d-flex justify-content-center`}>
           {config.socialLinks.map((social) => {
             const { icon, url, name } = social;
             return (

@@ -1,9 +1,10 @@
 import React from "react";
 import Scroll from "../Scroll";
+import styles from "./offering.module.scss";
 
 const Offering = () => {
   return (
-    <section id="utbud" className="packages-section">
+    <section id="utbud" className={styles.packagesSection}>
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">

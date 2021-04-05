@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "./icon_white.png";
+import styles from "./contact.module.scss";
 
 const Contact = ({ fullHeight }) => {
   const [firstName, setFirstName] = useState("");
@@ -52,7 +53,7 @@ const Contact = ({ fullHeight }) => {
   return (
     <section
       id="intresseanmalan"
-      className={`${"signup-section"} ${fullHeight ? "logo" : ""}`}
+      className={`${styles.signupSection} ${fullHeight ? styles.logo : ""}`}
     >
       <div className={`container ${fullHeight ? "full-height" : ""}`}>
         {fullHeight && (

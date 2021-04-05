@@ -1,10 +1,11 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import styles from "./references.module.scss";
 
 const References = () => {
   return (
-    <section className="text-center references-section">
+    <section className={`${styles.referencesSection} text-center`}>
       <div className="row">
         <div className="col-sm-12">
           <h2 style={{ fontSize: 16 }}>

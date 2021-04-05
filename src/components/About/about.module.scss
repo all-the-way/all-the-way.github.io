@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: 10rem 0;
+  background: #f8f9fa;
+}
+
+.featuredText {
+  padding: 2rem;
+  @media (min-width: 992px) {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid $primary;
+  }
+}

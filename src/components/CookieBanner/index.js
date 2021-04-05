@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link } from "gatsby";
+import styles from "./cookieBanner.module.scss";
 
 const CookieBanner = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["acceptCookie"]);
@@ -21,7 +22,9 @@ const CookieBanner = () => {
   }
 
   return (
-    <div className="fixed-bottom cookie-banner d-flex align-items-center justify-content-between flex-column flex-md-row">
+    <div
+      className={`${styles.cookieBanner} fixed-bottom d-flex align-items-center justify-content-between flex-column flex-md-row`}
+    >
       <span>
         <p>Vi använder cookies, tyvärr är dessa inte ätbara 🍪</p>
         <p>

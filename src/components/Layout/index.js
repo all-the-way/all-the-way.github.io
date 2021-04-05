@@ -4,8 +4,6 @@ import { CookiesProvider } from "react-cookie";
 import { StaticQuery, graphql } from "gatsby";
 import CookieBanner from "../CookieBanner";
 
-import "../../assets/sass/main.scss";
-
 const Layout = ({ children }) => {
   return (
     <StaticQuery

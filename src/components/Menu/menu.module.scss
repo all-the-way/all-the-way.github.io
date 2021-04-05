@@ -1,0 +1,79 @@
+@import "../../styles/variables.scss";
+
+.logo {
+  max-width: 150px;
+  padding: 15px;
+}
+.navbarToggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: $white !important;
+  border: 1px solid $white !important;
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbarNav {
+  .navItem {
+    &:hover {
+      color: fade(white, 80%);
+      outline: none;
+      background-color: transparent;
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.navLink {
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    color: fade-out($white, 0.25) !important;
+  }
+}
+
+.mainNav {
+  min-height: 56px;
+  background-color: $primary;
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+
+    .navLink {
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: fade-out($white, 0.5);
+      &:hover {
+        color: fade-out($white, 0.25);
+      }
+      &:active {
+        color: white;
+      }
+    }
+    &.navbarShrink {
+      background-color: $primary;
+
+      .navLink {
+        color: $white;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+        &:hover {
+          color: $primary;
+        }
+        &:active {
+          color: darken($primary, 15%);
+        }
+      }
+    }
+  }
+}
