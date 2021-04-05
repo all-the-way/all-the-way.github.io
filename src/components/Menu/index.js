@@ -37,7 +37,7 @@ const Menu = ({ external }) => {
       id="mainNav"
     >
       <div className="container" id="hem">
-        <Link to="/">
+        <Link to="/#medlemskap">
           <img
             src={logo}
             alt="Logotype - All The Way Gym"
@@ -63,6 +63,11 @@ const Menu = ({ external }) => {
         >
           <ul className={`navbar-nav ${styles.navbarNav} ml-auto`}>
             <li className={styles.navItem}>
+              <Link className={styles.navLink} to="/#medlemskap">
+                Medlemskap
+              </Link>
+            </li>
+            <li className={styles.navItem}>
               <Link className={styles.navLink} to="/#upplev-oss">
                 Upplev oss
               </Link>
@@ -71,11 +76,6 @@ const Menu = ({ external }) => {
             <li className={styles.navItem}>
               <Link className={styles.navLink} to="/#utbud">
                 Utbud
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link className={styles.navLink} to="/#intresseanmalan">
-                Intresseanmälan
               </Link>
             </li>
           </ul>

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.form {
+  //   max-width: 50%;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+
+    .light {
+      font-weight: 300;
+      display: block;
+    }
+  }
+}

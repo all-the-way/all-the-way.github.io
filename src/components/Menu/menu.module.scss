@@ -41,6 +41,7 @@
 .mainNav {
   min-height: 56px;
   background-color: $primary;
+  font-weight: 700;
 
   @media (min-width: 992px) {
     padding-top: 0;
@@ -52,7 +53,8 @@
     .navLink {
       transition: none;
       padding: 2rem 1.5rem;
-      color: fade-out($white, 0.5);
+      color: #fff;
+
       &:hover {
         color: fade-out($white, 0.25);
       }

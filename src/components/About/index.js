@@ -1,9 +1,9 @@
 import React from "react";
-import Scroll from "../Scroll";
 import aboutImage from "./about.png";
 import styles from "./about.module.scss";
+import Button from "../common/Button";
 
-const About = () => {
+const About = ({ onClickMembership }) => {
   return (
     <section id="upplev-oss" className={styles.container}>
       <div className="container">
@@ -35,11 +35,7 @@ const About = () => {
         </div>
 
         <div className="row no-gutters d-flex justify-content-center justify-content-lg-end mb-4 mb-lg-5">
-          <Scroll type="id" element="intresseanmalan">
-            <a href="#intresseanmalan" className="btn btn-primary">
-              Boka visning
-            </a>
-          </Scroll>
+          <Button onClick={onClickMembership} text="Boka visning"></Button>
         </div>
       </div>
     </section>

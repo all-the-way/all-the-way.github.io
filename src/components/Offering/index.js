@@ -1,8 +1,8 @@
 import React from "react";
-import Scroll from "../Scroll";
+import Button from "../common/Button";
 import styles from "./offering.module.scss";
 
-const Offering = () => {
+const Offering = ({ onClickMembership }) => {
   return (
     <section id="utbud" className={styles.packagesSection}>
       <div className="container">
@@ -76,11 +76,7 @@ const Offering = () => {
         className="row d-flex justify-content-center no-gutters mb-4 mb-lg-5"
         style={{ marginTop: 60 }}
       >
-        <Scroll type="id" element="intresseanmalan">
-          <a href="#intresseanmalan" className="btn btn-primary">
-            Upplev All The Way
-          </a>
-        </Scroll>
+        <Button onClick={onClickMembership} text="Upplev All The Way"></Button>
       </div>
     </section>
   );
