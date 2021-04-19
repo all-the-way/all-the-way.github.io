@@ -5,9 +5,13 @@
   justify-content: flex-start;
 }
 
-.form {
-  //   max-width: 50%;
+.message {
+  color: #fff;
+  font-weight: 600;
+  margin: 10px 0;
+}
 
+.form {
   @media (min-width: 768px) {
     max-width: 100%;
   }

@@ -9,17 +9,53 @@ const Membership = ({ membershipRef }) => {
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
+  const [message, setMessage] = useState("");
 
   const setState = {
     firstName: setFirstName,
     lastName: setLastName,
     phoneNumber: setPhoneNumber,
-    acceptTerms: setAcceptTerms,
+  };
+
+  const handleChangeAcceptTerms = (e) => {
+    setAcceptTerms(e.target.checked);
   };
 
   const handleChange = (e) => {
+    setMessage("");
     setState[e.target.name](e.target.value);
   };
+
+  const onPost = () => {
+    console.log(acceptTerms);
+    if (!firstName || !lastName || !phoneNumber) {
+      setMessage("Vänligen fyll i alla fält");
+      return;
+    }
+
+    if (!acceptTerms) {
+      setMessage("Vänligen acceptera våra villkor");
+      return;
+    }
+
+    fetch("https://localhost:44390/api/leads/", {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phoneNumber,
+      }),
+    }).then((response) => {
+      if (response.ok) {
+        setMessage("Tack för din anmälan");
+      }
+    });
+  };
+
   return (
     <div
       className={`${styles.container} container`}
@@ -65,13 +101,19 @@ const Membership = ({ membershipRef }) => {
           </div>
           <div className="row">
             <div className="form-group col-md-12 text-left">
-              <Checkbox name="acceptTerms" onChange={handleChange}>
+              <Checkbox
+                name="acceptTerms"
+                onChange={handleChangeAcceptTerms}
+                value={acceptTerms}
+                checked={acceptTerms}
+              >
                 Jag godkänner att mina personuppgifter hanteras enligt GDPR.
               </Checkbox>
             </div>
           </div>
         </form>
-        <Button light text="Bli medlem"></Button>
+        <Button light text="Bli medlem" onClick={onPost}></Button>
+        {message && <div className={styles.message}>{message}</div>}
       </div>
     </div>
   );
