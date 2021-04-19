@@ -38,7 +38,7 @@ const Membership = ({ membershipRef }) => {
       return;
     }
 
-    fetch("https://localhost:44390/api/leads/", {
+    fetch("https://all-the-way-backend.azurewebsites.net/api/leads", {
       method: "post",
       headers: {
         Accept: "application/json",
@@ -51,7 +51,12 @@ const Membership = ({ membershipRef }) => {
       }),
     }).then((response) => {
       if (response.ok) {
+        setFirstName("");
+        setLastName("");
+        setPhoneNumber("");
         setMessage("Tack för din anmälan");
+      } else {
+        console.error(response.error);
       }
     });
   };
