@@ -1,18 +1,29 @@
 @import "../../styles/variables.scss";
 
 .masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to right, #1f5d81, #1f5d81ee, #ffffff11),
-    url("./bg-masthead.jpg") no-repeat top center;
-  background-attachment: scroll;
-  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  // position: relative;
+  // width: 100%;
+  // height: auto;
+  // min-height: 35rem;
+  // padding: 15rem 0;
+  // background: linear-gradient(to right, #1f5d81, #1f5d81ee, #ffffff11),
+  //   url("./bg-masthead.jpg") no-repeat top center;
+  // background-attachment: scroll;
+  // background-size: cover;
 
-  @media (min-width: 992px) {
-    height: 100vh;
-    padding: 0;
-  }
+  // @media (min-width: 992px) {
+  //   height: 100vh;
+  //   padding: 0;
+  // }
+}
+
+.video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
