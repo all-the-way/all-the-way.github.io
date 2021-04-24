@@ -18,7 +18,7 @@ const About = ({ onClickMembership }) => {
           <div className="col-xl-6 col-lg-8">
             <div className={`${styles.featuredText} text-center text-lg-left`}>
               <h2 className="heading">
-                Exklusivt gym i Helsingborg med unik service och miljö
+                Exklusivt gym i Malmö med unik service och miljö
               </h2>
               <p className="text-black mb-3">
                 Vi vill att du skall lyckas med din träning! Därför bjuder vi in
@@ -26,9 +26,8 @@ const About = ({ onClickMembership }) => {
                 rådgivare, går igenom var du befinner dig just nu i din
                 träningsresa. Utöver detta får du även en personlig rundtur av
                 gymmet och får möjlighet att ställa frågor om oss på ATW i
-                Helsingborg. Allt för att du skall känna dig så trygg som
-                möjligt inför starten, eller fortsättningen, på din
-                träningsresa!
+                Malmö. Allt för att du skall känna dig så trygg som möjligt
+                inför starten, eller fortsättningen, på din träningsresa!
               </p>
             </div>
           </div>

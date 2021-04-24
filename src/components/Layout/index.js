@@ -18,14 +18,14 @@ const Layout = ({ children }) => {
       `}
       render={(data) => (
         <>
-          <Helmet title="All The Way - Exklusivt gym i Helsingborg">
+          <Helmet title="All The Way - Gym i Malmö">
             <meta
               name="description"
-              content="Bli medlem hos All The Way Helsingborg. Tillsammans gör vi en personlig hälsoplan så att du når dina mål! Du hittar oss på Berga, Helsingborg."
+              content="Bli medlem hos All The Way Malmö. Tillsammans gör vi en personlig hälsoplan så att du når dina mål! Du hittar oss i Malmö."
             />
             <meta
               name="keywords"
-              content="gym helsingborg, gym berga, Personlig träning, Personlig tränare, Personlig Tränare Helsingborg, friskvård"
+              content="gym Malmö, Personlig träning, Personlig tränare, Personlig Tränare Malmö, friskvård"
             />
             <html lang="sv" />
             <link

@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Hero>
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
-          <h1 className="mx-auto my-0 text-uppercase">
+          <h1 className="mx-auto my-0 text-uppercase text-white">
             Sidan kunde inte hittas
           </h1>
           <Button link="/" text="Hem" className="mt-3 d-inline-block"></Button>

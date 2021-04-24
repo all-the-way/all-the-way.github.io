@@ -14,7 +14,7 @@ const Hero = ({ children }) => (
     >
       <source src={video} type="video/mp4" />
     </video>
-    {children}
+    <div className={styles.content}>{children}</div>
   </header>
 );
 

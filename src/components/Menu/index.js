@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./menu.module.scss";
-import logo from "./logo.png";
+import logo from "./logo.svg";
 import { Link } from "gatsby";
 
 const Menu = ({ external }) => {

@@ -24,6 +24,7 @@
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0",
     "react-responsive-carousel": "^3.2.11",
+    "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
