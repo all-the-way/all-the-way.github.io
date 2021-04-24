@@ -4,7 +4,7 @@ import Input from "../common/Input";
 import Checkbox from "../common/Checkbox";
 import styles from "./membership.module.scss";
 
-const Membership = ({ membershipRef }) => {
+const Membership = ({ membershipRef, center }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -63,7 +63,7 @@ const Membership = ({ membershipRef }) => {
 
   return (
     <div
-      className={`${styles.container} container`}
+      className={`${styles.container} ${center ? styles.center : ""} container`}
       ref={membershipRef}
       id="medlemskap"
     >

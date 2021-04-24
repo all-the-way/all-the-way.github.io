@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import aboutImage from "./about.png";
+import aboutImage from "./atw.jpg";
 import styles from "./about.module.scss";
 import Button from "../common/Button";
 
@@ -8,19 +8,21 @@ const About = ({ onClickMembership }) => {
   return (
     <section id="upplev-oss" className={styles.container}>
       <div className="container">
-        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div className="col-xl-6 col-lg-4">
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5 d-flex flex-column justify-center">
+          <div className="col-lg-8">
             <img
-              className="img-fluid mb-3 mb-lg-0"
+              className={`${styles.aboutImage} img-fluid mb-3 mb-lg-0`}
               src={aboutImage}
               alt="Bild på Oscar och Zakarias"
             />
           </div>
-          <div className="col-xl-6 col-lg-8">
+        </div>
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5 d-flex flex-column justify-center">
+          <div className="col-lg-8">
             <div className={`${styles.featuredText} text-center text-lg-left`}>
               <Fade top>
                 <h2 className="heading">
-                  Exklusivt gym i Malmö med unik service och miljö
+                  Träningsklubb i Malmö med unik service och miljö
                 </h2>
               </Fade>
               <Fade top delay={650}>
@@ -38,7 +40,7 @@ const About = ({ onClickMembership }) => {
           </div>
         </div>
 
-        <div className="row no-gutters d-flex justify-content-center justify-content-lg-end mb-4 mb-lg-5">
+        <div className="row no-gutters d-flex justify-content-center mb-4 mb-lg-5">
           <Button onClick={onClickMembership} text="Boka visning"></Button>
         </div>
       </div>
