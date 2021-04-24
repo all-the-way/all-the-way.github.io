@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import aboutImage from "./about.png";
 import styles from "./about.module.scss";
 import Button from "../common/Button";
@@ -17,18 +18,22 @@ const About = ({ onClickMembership }) => {
           </div>
           <div className="col-xl-6 col-lg-8">
             <div className={`${styles.featuredText} text-center text-lg-left`}>
-              <h2 className="heading">
-                Exklusivt gym i Malmö med unik service och miljö
-              </h2>
-              <p className="text-black mb-3">
-                Vi vill att du skall lyckas med din träning! Därför bjuder vi in
-                dig på en personlig hälsoplan där ni, tillsammans med en av våra
-                rådgivare, går igenom var du befinner dig just nu i din
-                träningsresa. Utöver detta får du även en personlig rundtur av
-                gymmet och får möjlighet att ställa frågor om oss på ATW i
-                Malmö. Allt för att du skall känna dig så trygg som möjligt
-                inför starten, eller fortsättningen, på din träningsresa!
-              </p>
+              <Fade top>
+                <h2 className="heading">
+                  Exklusivt gym i Malmö med unik service och miljö
+                </h2>
+              </Fade>
+              <Fade top delay={650}>
+                <p className="text-black mb-3">
+                  Vi vill att du skall lyckas med din träning! Därför bjuder vi
+                  in dig på en personlig hälsoplan där ni, tillsammans med en av
+                  våra rådgivare, går igenom var du befinner dig just nu i din
+                  träningsresa. Utöver detta får du även en personlig rundtur av
+                  gymmet och får möjlighet att ställa frågor om oss på ATW i
+                  Malmö. Allt för att du skall känna dig så trygg som möjligt
+                  inför starten, eller fortsättningen, på din träningsresa!
+                </p>
+              </Fade>
             </div>
           </div>
         </div>
