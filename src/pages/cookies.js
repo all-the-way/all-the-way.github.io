@@ -14,19 +14,19 @@ const CookiesPage = () => (
       />
     </Helmet>
     <Menu external />
-    <section style={{ marginTop: 150 }}>
+    <section style={{ marginTop: 150, marginBottom: 150 }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <h1>Policy för användning av cookies</h1>
-            <p>
+            <p className="mb-5">
               För att optimera din upplevelse på denna webbplats använder All
               The Way cookies. Om du inte accepterar vår användning av cookies
               så kan du inte använda denna tjänst.
             </p>
 
             <h2>Vad är cookies?</h2>
-            <p>
+            <p className="mb-5">
               Cookies är små textfiler med information som lagras på din dator
               när du besöker en webbplats. En cookie lagrar information för att
               göra din upplevelse mer effektiv samt för att ge viss information
@@ -34,7 +34,7 @@ const CookiesPage = () => (
             </p>
 
             <h2>Vad använder All The Way cookies till?</h2>
-            <p>
+            <p className="mb-5">
               All The Way använder cookies för att spara användarinställningar
               samt för att lagra anonymiserad användarstatistik och
               marknadsföring.
@@ -53,7 +53,7 @@ const CookiesPage = () => (
               cookies anges i instruktionerna till webbläsaren.
             </p>
 
-            <p>
+            <p className="mb-5">
               Observera att om du väljer att inte tillåta lagring av cookies så
               kan du inte använda denna webbplats. Stäng då omedelbart ner
               webbläsaren och rensa dina cookies.
@@ -65,13 +65,15 @@ const CookiesPage = () => (
               Datumet för den senaste ändringen anges i slutet av policyn.
             </p>
 
-            <p>
+            <p className="mb-5">
               Om du har några frågor gällande denna policy eller vår användning
-              av cookies är du välkommen att kontakta oss på
-              info@allthewaygym.se
+              av cookies är du välkommen att kontakta oss på{" "}
+              <a href="mailto:info@allthewaygym.se">info@allthewaygym.se</a>
             </p>
 
-            <p>Denna policy uppdaterades senast den 22 december, 2020.</p>
+            <p className="mb-5">
+              Denna policy uppdaterades senast den 22 december, 2020.
+            </p>
           </div>
         </div>
       </div>
