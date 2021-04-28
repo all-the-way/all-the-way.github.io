@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+.videoContainer {
+  background: url("./hero.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+
 .video {
   object-fit: cover;
   width: 100%;
