@@ -16,7 +16,7 @@ module.exports = {
           dataLayerName: "dataLayer",
         },
         facebookPixel: {
-          pixelId: "871538353609114",
+          pixelId: "2947608032185571",
           cookieName: "acceptCookie",
         },
         environments: ["production"],
