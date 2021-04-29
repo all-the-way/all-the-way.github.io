@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Contact from "../components/Contact";
 import Helmet from "react-helmet";
 import Hero from "../components/Hero";
 import Membership from "../components/Membership";

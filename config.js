@@ -1,12 +1,5 @@
 module.exports = {
-  siteTitle: "Gym i Malmö - All The Way", // <title>
-  manifestName: "All The Way",
-  manifestShortName: "All The Way", // max 12 characters
-  manifestStartUrl: "/",
-  manifestBackgroundColor: "#00587c",
-  manifestThemeColor: "#00587c",
-  manifestDisplay: "standalone",
-  manifestIcon: "src/assets/img/website-icon.png",
+  siteTitle: "Gym i Malmö - All The Way",
   pathPrefix: "",
   heading: "All The Way",
   subHeading: "Din personliga tränare",

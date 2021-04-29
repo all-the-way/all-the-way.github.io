@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link } from "gatsby";
 import styles from "./cookieBanner.module.scss";
+import Button from "../common/Button";
 
 const CookieBanner = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["acceptCookie"]);
@@ -36,13 +37,9 @@ const CookieBanner = () => {
           .
         </p>
       </span>
-
-      <button
-        className="btn btn-primary float-right mt-2"
-        onClick={handleAcceptCookies}
-      >
+      <Button className="float-right" onClick={handleAcceptCookies} text="Ok">
         Ok
-      </button>
+      </Button>
     </div>
   );
 };
