@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./hero.module.scss";
 import video from "./hero.mp4";
 import heroImage from "./hero.jpg";
