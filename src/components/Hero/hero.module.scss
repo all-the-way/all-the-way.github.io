@@ -3,8 +3,12 @@
 .masthead {
   width: 100vw;
   height: 100vh;
+  width: 100%;
   position: relative;
   background-color: $primary;
+  @media (min-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 .videoContainer {
@@ -25,6 +29,6 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 70px;
+  top: 96px;
   z-index: 2;
 }

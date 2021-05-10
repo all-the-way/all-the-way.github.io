@@ -24,12 +24,7 @@
 
   h1 {
     color: #fff;
-    font-size: 2rem;
     margin-bottom: 3rem;
-
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
 
     .light {
       font-weight: 300;

@@ -58,3 +58,12 @@ a {
 footer {
   padding: 5rem 0;
 }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
