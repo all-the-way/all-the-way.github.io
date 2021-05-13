@@ -10,6 +10,7 @@ const Membership = ({ membershipRef, center }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const setState = {
     firstName: setFirstName,
@@ -26,8 +27,57 @@ const Membership = ({ membershipRef, center }) => {
     setState[e.target.name](e.target.value);
   };
 
-  const onPost = () => {
-    console.log(acceptTerms);
+  const postLead = async () => {
+    var formData = new FormData();
+    formData.append("entry.17082701", firstName);
+    formData.append("entry.1001144049", lastName);
+    formData.append("entry.2090741493", phoneNumber);
+
+    await fetch(
+      "https://docs.google.com/forms/u/6/d/e/1FAIpQLSc0L1No6dkhY5XdPvx28SEY3ZSIVGrqN027FJT72fZRYY6QUg/formResponse",
+      {
+        method: "POST",
+        body: formData,
+        mode: "no-cors",
+      }
+    );
+
+    try {
+      const response = await fetch(
+        "https://all-the-way-backend.azurewebsites.net/api/leads",
+        {
+          method: "post",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+            phoneNumber: phoneNumber,
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      setFirstName("");
+      setLastName("");
+      setPhoneNumber("");
+      setMessage("Tack för din anmälan");
+      setLoading(false);
+    } catch (err) {
+      console.log("err");
+      setMessage(
+        "Ett fel uppstod. Vänligen försök igen eller kontakta info@allthewaygym.se om problemet kvarstår."
+      );
+      setLoading(false);
+    }
+  };
+
+  const onPost = async () => {
     if (!firstName || !lastName || !phoneNumber) {
       setMessage("Vänligen fyll i alla fält");
       return;
@@ -38,41 +88,8 @@ const Membership = ({ membershipRef, center }) => {
       return;
     }
 
-    var formData = new FormData();
-    formData.append("entry.17082701", firstName);
-    formData.append("entry.1001144049", lastName);
-    formData.append("entry.2090741493", phoneNumber);
-
-    fetch(
-      "https://docs.google.com/forms/u/6/d/e/1FAIpQLSc0L1No6dkhY5XdPvx28SEY3ZSIVGrqN027FJT72fZRYY6QUg/formResponse",
-      {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      }
-    ).then(() => {});
-
-    fetch("https://all-the-way-backend.azurewebsites.net/api/leads", {
-      method: "post",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName: firstName,
-        lastName: lastName,
-        phoneNumber: phoneNumber,
-      }),
-    }).then((response) => {
-      if (response.ok) {
-        setFirstName("");
-        setLastName("");
-        setPhoneNumber("");
-        setMessage("Tack för din anmälan");
-      } else {
-        console.error(response.error);
-      }
-    });
+    setLoading(true);
+    await postLead();
   };
   return (
     <div
@@ -130,7 +147,19 @@ const Membership = ({ membershipRef, center }) => {
             </div>
           </div>
         </form>
-        <Button light text="Anmäl intresse" onClick={onPost}></Button>
+        <Button
+          light
+          text={
+            loading ? (
+              <i className="fas fa-spinner spinning"></i>
+            ) : (
+              "Anmäl intresse"
+            )
+          }
+          onClick={onPost}
+          disabled={loading}
+          className={styles.button}
+        ></Button>
         {message && <div className={styles.message}>{message}</div>}
       </div>
     </div>

@@ -11,6 +11,7 @@ const Button = ({
   className,
   submit,
   link,
+  disabled,
 }) => {
   if (link) {
     return (
@@ -29,15 +30,21 @@ const Button = ({
         type="submit"
         value={text}
         name={name}
+        disabled={disabled}
         id={id}
-        className={`${styles.button} ${light ? styles.light : ""}`}
+        className={`${styles.button} ${light ? styles.light : ""} ${
+          className ? className : ""
+        }`}
         onClick={onClick}
       />
     );
   }
   return (
     <button
-      className={`${styles.button} ${light ? styles.light : ""}`}
+      className={`${styles.button} ${light ? styles.light : ""} ${
+        className ? className : ""
+      }`}
+      disabled={disabled}
       onClick={onClick}
     >
       {text}

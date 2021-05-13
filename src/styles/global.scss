@@ -67,3 +67,13 @@ footer {
     font-size: 18px;
   }
 }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spinner 1.5s linear infinite;
+}
