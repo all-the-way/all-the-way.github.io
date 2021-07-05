@@ -100,7 +100,7 @@ const Membership = ({ membershipRef, center }) => {
       <div className={styles.form}>
         <h1>
           Anmäl dig till en{" "}
-          <span className={styles.light}>PHP - Personlig Hälsoplan</span>
+          <span className={styles.light}>Personlig Hälsoplan</span>
         </h1>
         <form>
           <div className="row">

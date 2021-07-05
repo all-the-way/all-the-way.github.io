@@ -1,0 +1,20 @@
+.container {
+  background: #f8f9fa;
+  padding: 5rem 0;
+}
+
+.usps {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usp {
+  width: 250px;
+  text-align: center;
+
+  img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}

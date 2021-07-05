@@ -39,6 +39,29 @@ a {
   }
 }
 
+.highlight {
+  background: #fbee24;
+  color: $primary;
+  padding: 0 10px;
+}
+
+.subheading {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+::-moz-selection {
+  background: #fbee24;
+  color: $primary;
+}
+
+::selection {
+  background: #fbee24;
+  color: $primary;
+}
+
 .bg-black {
   background-color: $black !important;
 }
@@ -53,6 +76,14 @@ a {
 
 .text-primary {
   color: $primary !important;
+}
+
+:global(.white) {
+  color: #fff;
+}
+
+:global(.light) {
+  font-weight: 300 !important;
 }
 
 footer {

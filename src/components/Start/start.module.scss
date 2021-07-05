@@ -1,0 +1,18 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 85px;
+  color: #fff;
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
+}
+
+.subheading {
+  text-transform: none;
+}

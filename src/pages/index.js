@@ -8,21 +8,24 @@ import References from "../components/References";
 import Menu from "../components/Menu";
 import Hero from "../components/Hero";
 import Membership from "../components/Membership";
+import Start from "../components/Start";
+import UniqueSellingPoints from "../components/UniqueSellingPoints";
 
 const IndexPage = () => {
   const membershipRef = useRef(null);
 
   const handleMembershipClick = () => {
-    console.log("click");
     membershipRef.current.scrollIntoView();
   };
+
   return (
     <Layout>
       <Menu />
       <Hero>
-        <Membership membershipRef={membershipRef} />
+        <Start />
       </Hero>
-
+      <UniqueSellingPoints />
+      <Membership membershipRef={membershipRef} center />
       <About onClickMembership={handleMembershipClick}></About>
       <Offering onClickMembership={handleMembershipClick}></Offering>
       <References></References>
