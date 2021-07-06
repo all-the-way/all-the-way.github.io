@@ -2,6 +2,9 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Button from "../common/Button";
 import styles from "./offering.module.scss";
+import pt from "./pt.svg";
+import team from "./team.svg";
+import gym from "./gym.svg";
 
 const Offering = ({ onClickMembership }) => {
   return (
@@ -15,9 +18,9 @@ const Offering = ({ onClickMembership }) => {
         </div>
 
         <div className="row" style={{ marginTop: 20 }}>
-          <Fade top>
+          <Fade bottom>
             <div className="col-md-4 mb-4 mb-md-0">
-              <Card heading="Gym" icon="fa-building">
+              <Card heading="Gym" icon={gym}>
                 Vi erbjuder en välutrustad maskinpark med den senaste
                 teknologin, varierade redskap i toppkvalité och generösa
                 utrymmen. Gymmet är utrustat för att du ska kunna känna dig
@@ -27,9 +30,9 @@ const Offering = ({ onClickMembership }) => {
             </div>
           </Fade>
 
-          <Fade top delay={500}>
+          <Fade bottom delay={500}>
             <div className="col-md-4 mb-4 mb-md-0">
-              <Card heading="PT" icon="fa-dumbbell">
+              <Card heading="PT" icon={pt}>
                 För oss är det viktigt att du når din målsättning. Tillsammans
                 med en PT så får du individanpassad hjälp för att göra träningen
                 rolig och utmanade. Våra PTs utbildas regelbundet för att kunna
@@ -39,11 +42,11 @@ const Offering = ({ onClickMembership }) => {
             </div>
           </Fade>
 
-          <Fade top delay={1000}>
+          <Fade bottom delay={1000}>
             <div className="col-md-4 mb-4 mb-md-0">
-              <Card heading="Team" icon="fa-users">
+              <Card heading="Team" icon={team}>
                 TEAM – Together Everyone Achieves More. Träna tillsammans med
-                fyra till sex deltagare i ett TEAM. Vi peppar varandra, har
+                fyra till sex deltagare i ett TEAM. Vi pepparvarandra, har
                 roligt tillsammans och uppnår ett gemensamt träningsmål. Allt
                 under ledning utav en personlig tränare! Fråga oss för mer
                 information.
@@ -65,7 +68,8 @@ const Offering = ({ onClickMembership }) => {
 const Card = ({ heading, icon, children }) => (
   <div className={`${styles.card} card`}>
     <div className="card-body text-center">
-      <i className={`${styles.icon} ${icon} fas text-primary mb-2`}></i>
+      <img src={icon} className={styles.icon}></img>
+      {/* <i className={`${styles.icon} ${icon} fas text-primary mb-2`}></i> */}
       <h3 className="text-uppercase m-b2">{heading}</h3>
       <p>{children}</p>
     </div>

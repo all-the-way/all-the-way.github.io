@@ -7,8 +7,8 @@ const Start = () => (
     <div className="container">
       <Fade left>
         <h1 className={styles.heading}>
-          Första gången du får <span className="highlight">avkastning</span> av
-          att gå och träna
+          Första gången du får <span className="highlight">avkastning</span> på
+          ditt medlemskap
         </h1>
       </Fade>
       <Fade left delay={500}>

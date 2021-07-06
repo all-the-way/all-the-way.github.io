@@ -21,22 +21,29 @@ const UniqueSellingPoints = () => (
         <Fade bottom delay={1000}>
           <Usp
             heading="Hälsoplan"
-            text="Vi skapar en trygg och hjälpsam miljö genom en personlig hälsoplan och vårt team. Vi tar större ansvar för att hitta verktygen för dig!"
+            text="Tillsammans sätter vi upp en plan efter dina behov och förutsättningar"
             icon={healthplan}
           ></Usp>
         </Fade>
         <Fade bottom delay={1500}>
           <Usp
-            heading="Mentorskap"
+            heading="Tillgänglighet"
             icon={mentorship}
-            text="I ditt medlemskap ingår fem träffar med våra erfarna coacher. Vi hjälper dig hela vägen och ger dig bästa möjliga förutsättningar att lyckas."
+            text="Du har alltid tillgång till gymmet mellan 05-23 alla dagar på året."
           ></Usp>
         </Fade>
         <Fade bottom delay={2000}>
           <Usp
-            heading="Gemenskap"
+            heading="Mentorskap"
+            icon={mentorship}
+            text="För att du ska få anpassad hjälp följer vi upp dig fem gånger under årets gång"
+          ></Usp>
+        </Fade>
+        <Fade bottom delay={2500}>
+          <Usp
+            heading="Bemanning"
             icon={fellowship}
-            text="Hos oss finns det plats för ett begränsat antal medlemmar för att vi ska kunna ge dig tiden du förtjänar. Hos oss får du alltid hjälp."
+            text="Vi bemannar 12h/dag för att du ska få den support du behöver"
           ></Usp>
         </Fade>
       </div>

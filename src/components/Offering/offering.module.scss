@@ -1,7 +1,6 @@
 .offeringsSection {
   padding: 5rem 0;
-  // background: #a5c4ca;
-  background: #ecf2f4;
+  background: #f8f9fa;
 }
 
 .card {
@@ -11,6 +10,11 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   font-size: 14px;
   height: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   h3 {
     margin-bottom: 10px;
@@ -20,6 +24,7 @@
 .icon {
   font-size: 35px;
   padding: 10px;
+  width: 60%;
 }
 
 .sub {
