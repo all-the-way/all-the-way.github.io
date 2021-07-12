@@ -8,6 +8,7 @@ import References from "../components/References";
 import Menu from "../components/Menu";
 import Hero from "../components/Hero";
 import Membership from "../components/Membership";
+import Testimonials from "../components/Testimonials";
 import Start from "../components/Start";
 import UniqueSellingPoints from "../components/UniqueSellingPoints";
 
@@ -28,7 +29,8 @@ const IndexPage = () => {
       <Membership membershipRef={membershipRef} center />
       <About onClickMembership={handleMembershipClick}></About>
       <Offering onClickMembership={handleMembershipClick}></Offering>
-      <References></References>
+      <Testimonials />
+      {/* <References></References> */}
       <SocialLinks />
       <Footer />
     </Layout>

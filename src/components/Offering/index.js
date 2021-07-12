@@ -66,7 +66,7 @@ const Offering = ({ onClickMembership }) => {
 };
 
 const Card = ({ heading, icon, children }) => (
-  <div className={`${styles.card} card`}>
+  <div className={`${styles.card}`}>
     <div className="card-body text-center">
       <img src={icon} className={styles.icon}></img>
       {/* <i className={`${styles.icon} ${icon} fas text-primary mb-2`}></i> */}

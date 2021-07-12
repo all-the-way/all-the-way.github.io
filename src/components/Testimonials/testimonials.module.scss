@@ -1,0 +1,51 @@
+.testimonials {
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.card {
+  background: #fff;
+  height: 300px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0;
+  padding: 20px;
+  border: 0;
+  opacity: 0.8;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+:global(.slick-current) {
+  .card {
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 45px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    opacity: 1;
+  }
+}
+
+// :global(.slick-slide.slick-center) {
+//   transform: scale(1.1);
+
+//   .card {
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
