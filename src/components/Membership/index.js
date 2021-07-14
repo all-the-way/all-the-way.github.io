@@ -102,7 +102,12 @@ const Membership = ({ membershipRef, center }) => {
           Anmäl dig till en{" "}
           <span className={styles.light}>Personlig Hälsoplan</span>
         </h1>
-        <form>
+        <p className="white">
+          På en personlig hälsoplan går vi igenom din bakgrund, målsättningar,
+          eventuella skador och dina hinder. Därifrån hittar vi en lösning som
+          gör att du når din målsättning.
+        </p>
+        <form className="mt-5">
           <div className="row">
             <div className="form-group col-md-6">
               <Input

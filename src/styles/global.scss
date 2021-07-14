@@ -86,6 +86,12 @@ a {
   font-weight: 300 !important;
 }
 
+@media (min-width: 1200px) {
+  :global(.container.wide) {
+    max-width: 1500px;
+  }
+}
+
 footer {
   padding: 5rem 0;
 }
