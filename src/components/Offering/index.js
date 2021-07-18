@@ -9,7 +9,7 @@ import gym from "./gym.svg";
 const Offering = ({ onClickMembership }) => {
   return (
     <section id="utbud" className={styles.offeringsSection}>
-      <div className="container">
+      <div className="container wide">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
             <p className={styles.sub}>Platserna är begränsade</p>

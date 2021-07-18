@@ -4,12 +4,12 @@ import Footer from "../components/Footer";
 import SocialLinks from "../components/SocialLinks";
 import About from "../components/About";
 import Offering from "../components/Offering";
-import References from "../components/References";
 import Menu from "../components/Menu";
 import Hero from "../components/Hero";
 import Membership from "../components/Membership";
 import Testimonials from "../components/Testimonials";
 import Start from "../components/Start";
+import Map from "../components/Map";
 import UniqueSellingPoints from "../components/UniqueSellingPoints";
 
 const IndexPage = () => {
@@ -26,9 +26,10 @@ const IndexPage = () => {
         <Start />
       </Hero>
       <UniqueSellingPoints />
-      <Membership membershipRef={membershipRef} center />
       <About onClickMembership={handleMembershipClick}></About>
+      <Map></Map>
       <Offering onClickMembership={handleMembershipClick}></Offering>
+      <Membership membershipRef={membershipRef} center />
       <Testimonials />
       {/* <References></References> */}
       <SocialLinks />

@@ -11,6 +11,7 @@
     "email": "madeleine.schonemann@gmail.com"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.2.0",
     "gatsby": "^2.4.3",
     "gatsby-plugin-gdpr-cookies": "^1.0.11",
     "gatsby-plugin-manifest": "^2.1.1",

@@ -4,7 +4,6 @@ import styles from "./usp.module.scss";
 import limitation from "./limitation.svg";
 import healthplan from "./healthplan.svg";
 import mentorship from "./mentorship.svg";
-import availability from "./availability.svg";
 import bemanning from "./bemanning.svg";
 import Fade from "react-reveal/Fade";
 
@@ -20,7 +19,7 @@ const UniqueSellingPoints = () => (
         </h2>
       </Fade>
 
-      <div class="row mt-5">
+      <div className="row mt-5">
         <div className="col-lg-3 col-md-6 d-flex justify-content-center">
           <Fade bottom delay={1000}>
             <Usp
