@@ -11,6 +11,7 @@ import Testimonials from "../components/Testimonials";
 import Start from "../components/Start";
 import Map from "../components/Map";
 import UniqueSellingPoints from "../components/UniqueSellingPoints";
+import Contact from "../components/Contact";
 
 const IndexPage = () => {
   const membershipRef = useRef(null);
@@ -27,11 +28,11 @@ const IndexPage = () => {
       </Hero>
       <UniqueSellingPoints />
       <About onClickMembership={handleMembershipClick}></About>
-      <Map></Map>
+      <Map />
       <Offering onClickMembership={handleMembershipClick}></Offering>
       <Membership membershipRef={membershipRef} center />
       <Testimonials />
-      {/* <References></References> */}
+      <Contact />
       <SocialLinks />
       <Footer />
     </Layout>

@@ -69,7 +69,7 @@ const Membership = ({ membershipRef, center }) => {
       setMessage("Tack för din anmälan");
       setLoading(false);
     } catch (err) {
-      console.log("err");
+      console.log(err);
       setMessage(
         "Ett fel uppstod. Vänligen försök igen eller kontakta info@allthewaygym.se om problemet kvarstår."
       );

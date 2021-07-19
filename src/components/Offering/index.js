@@ -69,7 +69,6 @@ const Card = ({ heading, icon, children }) => (
   <div className={`${styles.card}`}>
     <div className="card-body text-center">
       <img src={icon} className={styles.icon}></img>
-      {/* <i className={`${styles.icon} ${icon} fas text-primary mb-2`}></i> */}
       <h3 className="text-uppercase m-b2">{heading}</h3>
       <p>{children}</p>
     </div>
