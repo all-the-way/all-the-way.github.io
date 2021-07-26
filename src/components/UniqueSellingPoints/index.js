@@ -11,7 +11,7 @@ const UniqueSellingPoints = () => (
   <div className={styles.container}>
     <div className="container wide">
       <Fade bottom>
-        <p className="subheading text-center">Ryggraden i vår värdegrund</p>
+        <p className="subheading text-center">Vårt medlemslöfte</p>
       </Fade>
       <Fade bottom delay={500}>
         <h2 className="text-center">
@@ -52,7 +52,7 @@ const UniqueSellingPoints = () => (
             <Usp
               heading="Bemanning"
               icon={bemanning}
-              text="Vi bemannar 12h timmar per dag för att du ska få den support du behöver"
+              text="Vi bemannar 12 timmar för att du ska få den support du behöver på plats"
             ></Usp>
           </Fade>
         </div>

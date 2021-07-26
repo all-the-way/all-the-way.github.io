@@ -12,8 +12,8 @@ const Offering = ({ onClickMembership }) => {
       <div className="container wide">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
-            <p className={styles.sub}>Platserna är begränsade</p>
-            <h2 className="heading">Vi erbjuder dig</h2>
+            <p className={styles.sub}>För bästa möjliga resultat</p>
+            <h2 className="heading">Erbjuder vi dig</h2>
           </div>
         </div>
 

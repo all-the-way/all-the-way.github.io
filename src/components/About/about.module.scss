@@ -1,8 +1,12 @@
 @import "../../styles/variables.scss";
 
 .container {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background: #fff;
+
+  @media (min-width: 900px) {
+    padding: 10rem 0;
+  }
 }
 
 .featuredText {

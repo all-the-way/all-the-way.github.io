@@ -1,6 +1,10 @@
 @import "../../styles/variables.scss";
 .contactSection {
   padding: 5rem 0 0;
+
+  @media (min-width: 900px) {
+    padding: 10rem 0;
+  }
 }
 
 .card {
