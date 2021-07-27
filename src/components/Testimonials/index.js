@@ -45,7 +45,7 @@ const Testimonials = () => {
         <Slider {...settings}>
           <Testimonial
             name="Maria"
-            text="Jag har blivit starkare psykiskt och fysiskt efter 4,5 år med PT. Tack vare kunskap, coachning och uppmuntran gav jag inte upp och nu är stryketräning roligt."
+            text="Jag har blivit starkare psykiskt och fysiskt efter 4,5 år med PT. Tack vare kunskap, coachning och uppmuntran gav jag inte upp och nu är styrketräning roligt."
             image={mariaLeonora}
           ></Testimonial>
           <Testimonial

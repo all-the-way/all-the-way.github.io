@@ -46,7 +46,7 @@ const Offering = ({ onClickMembership }) => {
             <div className="col-md-4 mb-4 mb-md-0">
               <Card heading="Team" icon={team}>
                 TEAM – Together Everyone Achieves More. Träna tillsammans med
-                fyra till sex deltagare i ett TEAM. Vi pepparvarandra, har
+                fyra till sex deltagare i ett TEAM. Vi peppar varandra, har
                 roligt tillsammans och uppnår ett gemensamt träningsmål. Allt
                 under ledning utav en personlig tränare! Fråga oss för mer
                 information.
