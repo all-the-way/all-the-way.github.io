@@ -5,12 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Testimonial from "./testimonial.js";
 import placeholder from "./images/portrait_placeholder.png";
-import mariaLeonora from "./images/maria_leonora.jpeg";
+import mariaLeonora from "./images/maria_leonora.jpg";
 import katrin from "./images/katrin.jpg";
 import andreas from "./images/andreas.jpg";
 import matilda from "./images/matilda.jpg";
 import sara from "./images/sara.jpg";
 import elina from "./images/elina.jpg";
+import johanna from "./images/johanna.jpg";
+import janne from "./images/janne.jpg";
+import johan from "./images/johan.jpg";
+import henrik from "./images/henrik.jpg";
 
 const Testimonials = () => {
   const settings = {
@@ -49,6 +53,11 @@ const Testimonials = () => {
             image={mariaLeonora}
           ></Testimonial>
           <Testimonial
+            name="Johan"
+            text="Jag har testat olika saker jag hittat på nätet, men inget hjälpte. Jag tog då kontakt med PT och efter ett personligt möte och därefter träning fick jag goda resultat som underlättade mitt yrke enormt."
+            image={johan}
+          ></Testimonial>
+          <Testimonial
             name="Katrin"
             text="Jag har lärt mig så mycket om träning. Har aldrig känt mig så stark som jag är idag. Jag har känt mig sedd och har fått den dära extra pushen för att orka mer. Fick även hjälp med hur man håller en god kosthållning, vilket syns på min kropp idag."
             image={katrin}
@@ -60,9 +69,19 @@ const Testimonials = () => {
             image={matilda}
           ></Testimonial>
           <Testimonial
+            name="Henrik"
+            text="Min tränares engagemang stärkte min vilja och jag lyckades för första gången komma in i en hållbar rutin som gav resultat. Mina egna pass blev bättre och jag fick hela tiden en puff framåt så värdet mycket mer än bara de bokade tiderna."
+            image={henrik}
+          ></Testimonial>
+          <Testimonial
             name="Sara"
-            text="Jag hade några extra kilon jag ville bli av med. Jag fick ett enkelt upplägg att följa. Trodde det skulle vara mycket jobbigare än vad det faktiskt var. Jag har tidigare trott att kolhydraterna var min värsta fiende, vilket inte stämde. Jag har aldrig ätit såhär mycket och ändå går jag ned i vikt, och så klarade jag min första pull-up. "
+            text="Jag hade några extra kilon jag ville bli av med. Jag fick ett enkelt upplägg att följa. Trodde det skulle vara mycket jobbigare än vad det faktiskt var. Jag har tidigare trott att kolhydraterna var min värsta fiende, vilket inte stämde. Jag har aldrig ätit såhär mycket och ändå går jag ned i vikt, och så klarade jag min första pull-up."
             image={sara}
+          ></Testimonial>
+          <Testimonial
+            name="Andreas"
+            text="Jag har alltid varit smal och har känt att jag har svårt att gå upp i vikt. Jag har lärt mig hur enkelt det är med hjälp av träning och mycket mat att nå de mål man har. Har även fått lära mig hur jag ska äta för att nå mina mål utan att följa en tråkig mall var dag."
+            image={andreas}
           ></Testimonial>
           <Testimonial
             name="Elina"
@@ -70,9 +89,14 @@ const Testimonials = () => {
             image={elina}
           ></Testimonial>
           <Testimonial
-            name="Andreas"
-            text="Jag har alltid varit smal och har känt att jag har svårt att gå upp i vikt. Jag har lärt mig hur enkelt det är med hjälp av träning och mycket mat att nå de mål man har. Har även fått lära mig hur jag ska äta för att nå mina mål utan att följa en tråkig mall var dag. "
-            image={andreas}
+            name="Janne"
+            text="Har aldrig varit så stark samtidigt som jag har haft sådan bra kondition. Jag har blivit visad alla grunder och tekniker som behövs. Även slagit ett PB på 100kg stöt. Jag längtar till varje träningspass. Tråkigt att man inte upptäckt detta tidigare i sitt liv."
+            image={janne}
+          ></Testimonial>
+          <Testimonial
+            name="Johanna"
+            text="Jag gick till PT angående kostrådgivning och bygga muskler. När jag började vägde jag 51 och nu väger jag 60. Jag känner mig starkare, snyggare och mår bättre. Jag var nervös i början eftersom jag inte har tränat på gym innan, men har verkligen blivit bekväm med styrketräningen och gymmet."
+            image={johanna}
           ></Testimonial>
         </Slider>
       </div>
