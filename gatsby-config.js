@@ -15,6 +15,10 @@ module.exports = {
           cookieName: "acceptCookie",
           dataLayerName: "dataLayer",
         },
+        facebookPixel: {
+          pixelId: "2947608032185571",
+          cookieName: "acceptCookie",
+        },
         environments: ["production"],
       },
     },
