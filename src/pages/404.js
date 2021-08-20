@@ -7,7 +7,7 @@ import Button from "../components/common/Button";
 
 const IndexPage = () => (
   <Layout>
-    <Helmet title="All The Way: Sidan kunde inte hittas"></Helmet>
+    <Helmet title="All The Way Gym: Sidan kunde inte hittas"></Helmet>
     <Menu external />
     <Hero>
       <div className="container d-flex h-100 align-items-center">

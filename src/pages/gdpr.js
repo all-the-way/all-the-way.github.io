@@ -6,7 +6,7 @@ import SocialLinks from "../components/SocialLinks";
 import Menu from "../components/Menu";
 const CookiesPage = () => (
   <Layout>
-    <Helmet title="All The Way: GDPR">
+    <Helmet title="All The Way Gym: GDPR">
       <meta name="description" content="All The Ways GDPR policy" />
     </Helmet>
     <Menu external />

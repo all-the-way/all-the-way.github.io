@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "../common/Button";
-import Input from "../common/Input";
-import Checkbox from "../common/Checkbox";
+import Button from "../../common/Button";
+import Input from "../../common/Input";
+import Checkbox from "../../common/Checkbox";
 import styles from "./membership.module.scss";
 
 const Membership = ({ membershipRef, center }) => {

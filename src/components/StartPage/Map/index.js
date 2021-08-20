@@ -1,5 +1,5 @@
 import React from "react";
-import MapContainer from "../common/MapContainer";
+import MapContainer from "../../common/MapContainer";
 import styles from "./map.module.scss";
 
 const Map = () => (

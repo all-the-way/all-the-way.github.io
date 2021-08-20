@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Button from "../common/Button";
+import Button from "../../common/Button";
 import styles from "./offering.module.scss";
 import pt from "./pt.svg";
 import team from "./team.svg";

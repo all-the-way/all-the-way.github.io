@@ -6,7 +6,7 @@ import SocialLinks from "../components/SocialLinks";
 import Menu from "../components/Menu";
 const CookiesPage = () => (
   <Layout>
-    <Helmet title="All The Way: Policy för användning av cookies">
+    <Helmet title="All The Way Gym: Policy för användning av cookies">
       <meta
         name="description"
         content="För att optimera din upplevelse på denna webbplats använder All

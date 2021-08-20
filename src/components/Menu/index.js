@@ -78,6 +78,11 @@ const Menu = ({ external }) => {
                 Utbud
               </Link>
             </li>
+            <li className={styles.navItem}>
+              <Link className={styles.navLink} to="/om">
+                Om oss
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

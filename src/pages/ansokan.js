@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Helmet from "react-helmet";
-import Membership from "../components/Membership";
+import Membership from "../components/StartPage/Membership";
 import logo from "../components/Menu/logo.svg";
 import video from "../components/Hero/hero.mp4";
 import heroImage from "../components/Hero/hero.jpg";
@@ -9,7 +9,7 @@ import heroImage from "../components/Hero/hero.jpg";
 const ApplicationPage = () => {
   return (
     <Layout>
-      <Helmet title="All The Way: Intresseanmälan"></Helmet>
+      <Helmet title="All The Way Gym: Intresseanmälan"></Helmet>
       <div style={{ width: "100vw", height: "100vh", position: "relative" }}>
         <div style={{ width: "100vw", height: "100vh" }}>
           <video

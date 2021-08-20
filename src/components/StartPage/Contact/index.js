@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "../common/Button";
-import Checkbox from "../common/Checkbox";
-import Input from "../common/Input";
-import Textarea from "../common/Textarea";
+import Button from "../../common/Button";
+import Checkbox from "../../common/Checkbox";
+import Input from "../../common/Input";
+import Textarea from "../../common/Textarea";
 import styles from "./contact.module.scss";
 
 const Contact = () => {
