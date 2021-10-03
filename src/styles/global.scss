@@ -43,6 +43,10 @@ a {
   background: #fbee24;
   color: $primary;
   padding: 0 0.3em;
+
+  &.bold {
+    font-weight: 800;
+  }
 }
 
 .subheading {

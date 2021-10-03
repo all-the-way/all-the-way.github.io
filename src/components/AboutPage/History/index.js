@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./history.module.scss";
 import placeholder from "./placeholder.jpeg";
 import Vignette from "./Vignette";
+import image from "./träningsresa.jpg";
 
 const History = () => {
   return (
@@ -19,7 +20,7 @@ const History = () => {
       </section>
 
       <section className={`${styles.section} ${styles.gray}`}>
-        <div className="container">
+        <div>
           <Vignette heading="En sen vinterkväll 2019" image={placeholder}>
             <p>
               En sen vinterkväll 2019 kom två killar fram till att livet är för
@@ -60,6 +61,20 @@ const History = () => {
               ”50% avbryter sitt medlemskap för att de antingen inte kommer
               igång eller når sitt önskade träningsresultat”
             </p>
+          </div>
+
+          <div className={`row ${styles.journey}`}>
+            <div className="col-xl-8">
+              <img src={image}></img>
+            </div>
+            <div className="col-xl-4 d-flex flex-column justify-content-center">
+              <p className={styles.heading}>ALL THE WAY - </p>
+              <p>
+                Första medlemskapet som är en{" "}
+                <span className="highlight bold">investering,</span> inte en
+                kostnad
+              </p>
+            </div>
           </div>
         </div>
       </section>
