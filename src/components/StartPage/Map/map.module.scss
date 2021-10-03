@@ -31,8 +31,22 @@
   flex-direction: column;
   font-weight: 700;
 
+  > div {
+    text-align: center;
+  }
+
   @media (min-width: 768px) {
     width: 50%;
     height: auto;
+  }
+}
+
+.openingHours {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 24px;
+
+  h4 {
+    margin-top: 20px;
   }
 }
