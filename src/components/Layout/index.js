@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { CookiesProvider } from "react-cookie";
 import { StaticQuery, graphql } from "gatsby";
-import CookieBanner from "../CookieBanner";
+import CookieBanner from "../common/CookieBanner";
 
 const Layout = ({ children }) => {
   return (

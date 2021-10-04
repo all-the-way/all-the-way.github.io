@@ -1,17 +1,17 @@
 import React, { useRef } from "react";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
-import SocialLinks from "../components/SocialLinks";
-import About from "../components/StartPage/About";
-import Offering from "../components/StartPage/Offering";
-import Menu from "../components/Menu";
-import Hero from "../components/Hero";
-import Membership from "../components/StartPage/Membership";
-import Testimonials from "../components/Testimonials";
-import Start from "../components/StartPage/Start";
-import Map from "../components/StartPage/Map";
-import UniqueSellingPoints from "../components/UniqueSellingPoints";
-import Contact from "../components/StartPage/Contact";
+import Footer from "../components/common/Footer";
+import SocialLinks from "../components/common/SocialLinks";
+import About from "../components/pages/Start/About";
+import Offering from "../components/pages/Start/Offering";
+import Menu from "../components/common/Menu";
+import Hero from "../components/pages/Start/Hero";
+import Membership from "../components/pages/Start/Membership";
+import Testimonials from "../components/pages/Start/Testimonials";
+import Start from "../components/pages/Start/Start";
+import Map from "../components/pages/Start/Map";
+import UniqueSellingPoints from "../components/pages/Start/UniqueSellingPoints";
+import Contact from "../components/pages/Start/Contact";
 
 const IndexPage = () => {
   const membershipRef = useRef(null);

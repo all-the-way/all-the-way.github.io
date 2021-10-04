@@ -1,10 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
-import About from "../components/AboutPage/About";
-import History from "../components/AboutPage/History";
-import ImageDivider from "../components/ImageDivider";
+import About from "../components/pages/About/About";
+import History from "../components/pages/About/History";
+import ImageDivider from "../components/common/ImageDivider";
 import Layout from "../components/Layout";
-import Menu from "../components/Menu";
+import Menu from "../components/common/Menu";
+import Header from "../components/pages/About/Header/index";
 
 const OmPage = () => {
   return (
@@ -13,6 +14,7 @@ const OmPage = () => {
         <meta name="description" content="" />
       </Helmet>
       <Menu external />
+      <Header></Header>
       <History></History>
       <ImageDivider></ImageDivider>
       <About></About>
@@ -21,3 +23,4 @@ const OmPage = () => {
 };
 
 export default OmPage;
+       

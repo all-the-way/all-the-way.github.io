@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Helmet from "react-helmet";
-import Membership from "../components/StartPage/Membership";
-import logo from "../components/Menu/logo.svg";
-import video from "../components/Hero/hero.mp4";
-import heroImage from "../components/Hero/hero.jpg";
+import Membership from "../components/pages/Start/Membership";
+import logo from "../components/common/Menu/logo.svg";
+import video from "../components/pages/Start/Hero/hero.mp4";
+import heroImage from "../components/pages/Start/Hero/hero.jpg";
 
 const ApplicationPage = () => {
   return (

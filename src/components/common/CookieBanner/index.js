@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link } from "gatsby";
 import styles from "./cookieBanner.module.scss";
-import Button from "../common/Button";
+import Button from "../Button";
 
 const CookieBanner = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["acceptCookie"]);

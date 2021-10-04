@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import Menu from "../components/Menu";
+import Hero from "../components/pages/Start/Hero";
+import Menu from "../components/common/Menu";
 import Button from "../components/common/Button";
 
 const IndexPage = () => (

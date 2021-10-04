@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Helmet from "react-helmet";
-import Footer from "../components/Footer";
-import SocialLinks from "../components/SocialLinks";
-import Menu from "../components/Menu";
+import Footer from "../components/common/Footer";
+import SocialLinks from "../components/common/SocialLinks";
+import Menu from "../components/common/Menu";
 const CookiesPage = () => (
   <Layout>
     <Helmet title="All The Way Gym: Policy för användning av cookies">

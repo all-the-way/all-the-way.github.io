@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import aboutImage from "./atw.jpg";
 import styles from "./about.module.scss";
-import Button from "../../common/Button";
+import Button from "../../../common/Button";
 
 const About = ({ onClickMembership }) => {
   return (
