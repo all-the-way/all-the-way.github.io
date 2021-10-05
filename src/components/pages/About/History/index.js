@@ -9,8 +9,7 @@ const History = () => {
     <>
       <section className={styles.section}>
         <div className="container d-flex flex-column align-items-center">
-          <h1 className="highlight text-center mb-4">Vår historia</h1>
-          <h2 className="text-center text-white">
+          <h2 className="text-center text-white mt-5 mb-5">
             Vi är inte bara Malmös mest personliga träningsklubb - genom våra
             hälsoplaner och mentorskapsprogram hjälper vi dig att skapa hållbara
             och långsiktiga vanor för att du ska bli starkare, smärtfri, nå din
@@ -19,7 +18,53 @@ const History = () => {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.gray}`}>
+      <div className={styles.container}>
+        <div className={styles.image}>
+          <div
+            className={styles.innerImage}
+            style={{ backgroundImage: `url(${placeholder})` }}
+          ></div>
+        </div>
+        <div className={styles.content} style={{ backgroundColor: "#00638a" }}>
+          <div className={styles.inner}>
+            <p>
+              En sen vinterkväll 2019 kom två killar fram till att livet är för
+              kort för dålig träning! Alla vet hur man köper ett träningskort
+              men få vet hur man använder det.
+            </p>
+            <p>
+              Tänk om vi kunde lära folk att använda sitt träningskort på ett
+              bättre sätt och göra träningen mer hållbar?
+            </p>
+            <p>Vad händer om vi engagerar oss?</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.content} style={{ backgroundColor: "#004763" }}>
+          <div className={styles.inner}>
+            <p>
+              En sen vinterkväll 2019 kom två killar fram till att livet är för
+              kort för dålig träning! Alla vet hur man köper ett träningskort
+              men få vet hur man använder det.
+            </p>
+            <p>
+              Tänk om vi kunde lära folk att använda sitt träningskort på ett
+              bättre sätt och göra träningen mer hållbar?
+            </p>
+            <p>Vad händer om vi engagerar oss?</p>
+          </div>
+        </div>
+        <div className={styles.image}>
+          <div
+            className={styles.innerImage}
+            style={{ backgroundImage: `url(${placeholder})` }}
+          ></div>
+        </div>
+      </div>
+
+      {/* <section className={`${styles.section} ${styles.gray}`}>
         <div>
           <Vignette heading="En sen vinterkväll 2019" image={placeholder}>
             <p>
@@ -77,7 +122,7 @@ const History = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

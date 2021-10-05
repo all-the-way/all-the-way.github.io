@@ -66,3 +66,36 @@
     font-size: 40px;
   }
 }
+
+.container {
+  display: flex;
+}
+
+.image {
+  flex: 1;
+  overflow: hidden;
+
+  .innerImage {
+    background-size: cover;
+    transition: transform 0.5s;
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.content {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+
+  .inner {
+    margin: 200px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
