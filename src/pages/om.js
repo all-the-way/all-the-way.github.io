@@ -6,6 +6,8 @@ import ImageDivider from "../components/common/ImageDivider";
 import Layout from "../components/Layout";
 import Menu from "../components/common/Menu";
 import Header from "../components/pages/About/Header/index";
+import SocialLinks from "../components/common/SocialLinks";
+import Footer from "../components/common/Footer";
 
 const OmPage = () => {
   return (
@@ -16,11 +18,12 @@ const OmPage = () => {
       <Menu external />
       <Header></Header>
       <History></History>
-      <ImageDivider></ImageDivider>
-      <About></About>
+      {/* <ImageDivider></ImageDivider>
+      <About></About> */}
+      <SocialLinks />
+      <Footer />
     </Layout>
   );
 };
 
 export default OmPage;
-       
