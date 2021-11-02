@@ -4,9 +4,6 @@ import styles from "./input.module.scss";
 const Input = ({ type, label, name, value, onChange }) => {
   return (
     <>
-      <label className={styles.label} htmlFor={name}>
-        {label}
-      </label>
       <input
         type={type}
         className={styles.input}
@@ -15,6 +12,9 @@ const Input = ({ type, label, name, value, onChange }) => {
         value={value}
         onChange={(e) => onChange(e)}
       />
+      <label className={styles.label} htmlFor={name}>
+        {label}
+      </label>
     </>
   );
 };

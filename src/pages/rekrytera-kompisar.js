@@ -1,28 +1,24 @@
 import React from "react";
 import Helmet from "react-helmet";
-import About from "../components/pages/About/About";
-import History from "../components/pages/About/History";
-import ImageDivider from "../components/common/ImageDivider";
 import Layout from "../components/Layout";
 import Menu from "../components/common/Menu";
 import Header from "../components/pages/About/Header/index";
 import SocialLinks from "../components/common/SocialLinks";
 import Footer from "../components/common/Footer";
+import Recruitment from "../components/pages/Recruitment";
 
-const OmPage = () => {
+const RecruitmentPage = () => {
   return (
     <Layout>
-      <Helmet title="All The Way Gym: Vår historia">
+      <Helmet title="All The Way Gym: Rekommendera oss">
         <meta name="description" content="" />
       </Helmet>
       <Menu external />
-      <History></History>
-      {/* <ImageDivider></ImageDivider>
-      <About></About> */}
+      <Recruitment />
       <SocialLinks />
       <Footer />
     </Layout>
   );
 };
 
-export default OmPage;
+export default RecruitmentPage;

@@ -1,11 +1,13 @@
 import React from "react";
-import gym from "./gym.jpg";
 import styles from "./header.module.scss";
 
-const Header = () => {
+const Header = ({ image, heading, fixed }) => {
   return (
-    <div className={styles.header} style={{ backgroundImage: `url(${gym})` }}>
-      <h1 className="highlight">Vår historia</h1>
+    <div
+      className={`${styles.header} ${fixed ? styles.fixed : ""}`}
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      {heading}
     </div>
   );
 };
