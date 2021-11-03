@@ -98,6 +98,9 @@ const Recruitment = () => {
             <p>
               Vi är oerhört glada att du vill rekommendera oss till din vän.
             </p>
+            <p style={{ fontSize: 20 }}>
+              Berätta för din vän att vi ringer upp inom 48 timmar.
+            </p>
           </div>
           <div>
             <div className="form-group">
