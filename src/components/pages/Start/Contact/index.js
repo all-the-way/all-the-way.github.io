@@ -30,6 +30,16 @@ const Contact = () => {
     setAcceptTerms(e.target.checked);
   };
 
+  const track = () => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "form_submission",
+        formType: "contact",
+      });
+    }
+  };
+
   const postEmail = async () => {
     if (!name || !email || !message) {
       setStatusMessage("Vänligen fyll i fälten markerade med *");
@@ -64,6 +74,8 @@ const Contact = () => {
       if (!response.ok) {
         throw new Error();
       }
+
+      track();
 
       setName("");
       setEmail("");

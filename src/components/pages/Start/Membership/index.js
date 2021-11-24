@@ -27,6 +27,16 @@ const Membership = ({ membershipRef, center }) => {
     setState[e.target.name](e.target.value);
   };
 
+  const track = () => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "form_submission",
+        formType: "php",
+      });
+    }
+  };
+
   const postLead = async () => {
     var formData = new FormData();
     formData.append("entry.17082701", firstName);
@@ -62,6 +72,8 @@ const Membership = ({ membershipRef, center }) => {
       if (!response.ok) {
         throw new Error();
       }
+
+      track();
 
       setFirstName("");
       setLastName("");

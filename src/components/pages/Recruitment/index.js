@@ -31,6 +31,16 @@ const Recruitment = () => {
     setAcceptTerms(e.target.checked);
   };
 
+  const track = () => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "form_submission",
+        formType: "friends",
+      });
+    }
+  };
+
   const postEmail = async () => {
     if (!friendName || !friendPhone || !memberName || !trainingReason) {
       setStatusMessage("Vänligen fyll i alla fält");
@@ -65,6 +75,8 @@ const Recruitment = () => {
       if (!response.ok) {
         throw new Error();
       }
+
+      track();
 
       setMemberName("");
       setFriendName("");
