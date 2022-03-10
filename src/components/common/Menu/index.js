@@ -83,6 +83,11 @@ const Menu = ({ external }) => {
                 Om oss
               </Link>
             </li>
+            <li className={styles.navItem}>
+              <Link className={styles.navLink} to="https://allthewaygym.blog/">
+                Blogg
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
