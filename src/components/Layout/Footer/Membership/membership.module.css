@@ -1,0 +1,12 @@
+.container {
+  background-size: cover;
+}
+
+.container h2 {
+  text-transform: none;
+  font-size: 24px;
+}
+
+.container p {
+  font-weight: 600;
+}

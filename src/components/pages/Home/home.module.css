@@ -1,0 +1,91 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--blue);
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    overflow: hidden;
+  }
+}
+
+.wrapper:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 104%;
+  content: "";
+  opacity: 0.7;
+  background-image: linear-gradient(
+    99deg,
+    rgba(0, 88, 124, 1) 40%,
+    rgba(2, 126, 177, 1) 100%
+  );
+}
+
+.videoContainer {
+  background-color: var(--blue);
+  /* background: url("./hero.jpg") no-repeat center center; */
+  background-size: cover;
+  height: 100vh;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 104vh;
+}
+
+.content {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 40%;
+  z-index: 2;
+}
+
+.content h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 28px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.panelContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.panelContent h2 {
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 767px) {
+  .content h1 {
+    padding: 0 15rem;
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .content h1 {
+    padding: 0;
+    width: 40%;
+  }
+}

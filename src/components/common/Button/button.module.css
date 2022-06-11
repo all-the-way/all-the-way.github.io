@@ -1,0 +1,25 @@
+.button {
+  background: var(--blue);
+  font-weight: 600;
+  color: var(--white);
+  padding: 15px 35px;
+  border: 2px solid var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: #003449;
+}
+
+.button.light {
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  background: var(--white);
+}
+
+a.button {
+  text-decoration: none;
+}

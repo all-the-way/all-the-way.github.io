@@ -1,0 +1,179 @@
+import React, { useState } from "react";
+import Button from "../../common/Button";
+import Checkbox from "../../common/Checkbox";
+import Input from "../../common/Input";
+import Panel from "../../common/Panel";
+import Content from "../../Layout/Content";
+import * as styles from "./recommendations.module.css";
+
+const Recommendations = () => {
+  const [memberName, setMemberName] = useState("");
+  const [friendName, setFriendName] = useState("");
+  const [friendPhone, setFriendPhone] = useState("");
+  const [trainingReason, setTrainingReason] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const [acceptTerms, setAcceptTerms] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const setState = {
+    memberName: setMemberName,
+    friendName: setFriendName,
+    friendPhone: setFriendPhone,
+    trainingReason: setTrainingReason,
+  };
+
+  const handleChange = (e) => {
+    setState[e.target.name](e.target.value);
+  };
+
+  const handleChangeAcceptTerms = (e) => {
+    setAcceptTerms(e.target.checked);
+  };
+
+  const track = () => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "form_submission",
+        formType: "friends",
+      });
+    }
+  };
+
+  const postEmail = async () => {
+    if (!friendName || !friendPhone || !memberName || !trainingReason) {
+      setStatusMessage("Vänligen fyll i alla fält");
+      return;
+    }
+
+    if (!acceptTerms) {
+      setStatusMessage("Vänligen acceptera våra villkor");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://all-the-way-backend.azurewebsites.net/api/emails/recruit",
+        {
+          method: "post",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            memberName,
+            friendName,
+            friendPhone,
+            trainingReason,
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      track();
+
+      setMemberName("");
+      setFriendName("");
+      setFriendPhone("");
+      setTrainingReason("");
+      setStatusMessage("");
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className={styles.container}>
+      <Content className={styles.content}>
+        <h1>Rekommendera oss till en vän</h1>
+        <Panel
+          firstContent={
+            <div>
+              <h2>
+                Värdecheck <span>online</span>
+              </h2>
+              <p>
+                Vi är oerhört glada att du vill rekommendera oss till din vän.
+              </p>
+              <p style={{ fontSize: 20 }}>
+                Berätta för din vän att vi ringer upp inom 48 timmar.
+              </p>
+            </div>
+          }
+          secondContent={
+            <div>
+              <div>
+                <Input
+                  label="Ditt för- och efternamn"
+                  type="text"
+                  name="memberName"
+                  value={memberName}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div>
+                <Input
+                  label="Vännens för- och efternamn"
+                  type="text"
+                  name="friendName"
+                  value={friendName}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div>
+                <Input
+                  label="Vännens telefonnummer"
+                  type="phone"
+                  name="friendPhone"
+                  value={friendPhone}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div>
+                <Input
+                  label="Varför ska din vän träna hos oss?"
+                  name="trainingReason"
+                  value={trainingReason}
+                  required
+                  type="textarea"
+                  onChange={handleChange}
+                ></Input>
+              </div>
+
+              <div style={{ marginTop: 30 }}>
+                <Checkbox
+                  name="acceptTerms"
+                  onChange={handleChangeAcceptTerms}
+                  value={acceptTerms}
+                  checked={acceptTerms}
+                >
+                  Jag godkänner att mina personuppgifter hanteras enligt GDPR.
+                </Checkbox>
+              </div>
+              <Button name="send" onClick={postEmail} disabled={loading} light>
+                {loading ? (
+                  <i className="fas fa-spinner spinning"></i>
+                ) : (
+                  "Skicka"
+                )}
+              </Button>
+              {statusMessage && <div>{statusMessage}</div>}
+            </div>
+          }
+        ></Panel>
+      </Content>
+    </div>
+  );
+};
+
+export default Recommendations;

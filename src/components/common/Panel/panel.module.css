@@ -1,0 +1,26 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.panel > div {
+  width: 100%;
+}
+
+.panel > div img {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .panel {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .panel > div {
+    width: 50%;
+  }
+}

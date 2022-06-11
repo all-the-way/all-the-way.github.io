@@ -1,9 +1,8 @@
-import { Link } from "gatsby";
-import React from "react";
-import styles from "./button.module.scss";
+import { Link } from "gatsby"
+import React from "react"
+import * as styles from "./button.module.css"
 
 const Button = ({
-  text,
   onClick,
   name,
   id,
@@ -11,24 +10,44 @@ const Button = ({
   className,
   submit,
   link,
+  external,
   disabled,
+  children,
+  ...rest
 }) => {
-  if (link) {
+  if (link && !external) {
     return (
       <Link
         to={link}
-        className={`${styles.button} ${className ? className : ""}`}
+        className={`${styles.button}  ${light ? styles.light : ""} ${
+          className ? className : ""
+        }`}
+        {...rest}
       >
-        {text}
+        {children}
       </Link>
-    );
+    )
+  }
+
+  if (link && external) {
+    return (
+      <a
+        href={link}
+        className={`${styles.button} ${light ? styles.light : ""} ${
+          className ? className : ""
+        }`}
+        {...rest}
+      >
+        {children}
+      </a>
+    )
   }
 
   if (submit) {
     return (
       <input
         type="submit"
-        value={text}
+        value={children}
         name={name}
         disabled={disabled}
         id={id}
@@ -36,8 +55,9 @@ const Button = ({
           className ? className : ""
         }`}
         onClick={onClick}
+        {...rest}
       />
-    );
+    )
   }
   return (
     <button
@@ -46,10 +66,11 @@ const Button = ({
       }`}
       disabled={disabled}
       onClick={onClick}
+      {...rest}
     >
-      {text}
+      {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

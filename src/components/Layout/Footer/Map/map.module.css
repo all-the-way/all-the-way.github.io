@@ -1,0 +1,9 @@
+.container {
+  height: 500px;
+}
+
+@media (min-width: 767px) {
+  .container {
+    height: auto;
+  }
+}

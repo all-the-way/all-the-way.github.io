@@ -1,0 +1,16 @@
+.cookieBanner {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  padding: 20px 70px;
+  font-weight: 600;
+  background: var(--yellow);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  color: var(--blue);
+}
+.cookieBanner p {
+  margin-bottom: 2px;
+}

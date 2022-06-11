@@ -1,12 +1,23 @@
-const config = require("./config");
-
 module.exports = {
-  pathPrefix: config.pathPrefix,
-  siteMetadata: {
-    title: config.siteTitle,
-  },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: process.env.WPGRAPHQL_URL || `https://cms.allthewaygym.se/graphql`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/content/assets`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
+    "gatsby-plugin-remove-serviceworker",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -22,7 +33,5 @@ module.exports = {
         environments: ["production"],
       },
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-remove-serviceworker",
   ],
 };

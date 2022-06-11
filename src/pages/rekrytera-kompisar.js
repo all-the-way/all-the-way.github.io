@@ -1,24 +1,29 @@
 import React from "react";
-import Helmet from "react-helmet";
-import Layout from "../components/Layout";
-import Menu from "../components/common/Menu";
-import Header from "../components/pages/About/Header/index";
-import SocialLinks from "../components/common/SocialLinks";
-import Footer from "../components/common/Footer";
-import Recruitment from "../components/pages/Recruitment";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import Home from "../components/pages/Home";
+import Recommendations from "../components/pages/Recommendations";
 
-const RecruitmentPage = () => {
+const RecruitmentPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
+
   return (
-    <Layout>
-      <Helmet title="All The Way Gym: Rekommendera oss">
-        <meta name="description" content="" />
-      </Helmet>
-      <Menu external />
-      <Recruitment />
-      <SocialLinks />
-      <Footer />
+    <Layout location={location} title={siteTitle}>
+      <Seo title="Rekommendera oss" />
+      <Recommendations></Recommendations>
     </Layout>
   );
 };
 
 export default RecruitmentPage;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
