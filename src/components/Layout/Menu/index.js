@@ -25,7 +25,7 @@ const Menu = () => {
   return (
     <nav className={styles.menu}>
       <Link to="/" className={styles.logo}>
-        <img src={logo} />
+        <img src={logo} alt="All The Way logo" />
       </Link>
       <div className={styles.mobile}>
         <div className={styles.hamburgerMenu}>

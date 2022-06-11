@@ -11,7 +11,10 @@ const BlogPostArchive = ({ posts, previousPagePath, nextPagePath }) => {
   if (!posts.length) {
     return (
       <Layout>
-        <Seo title="Alla inlägg" />
+        <Seo
+          title="Alla inlägg"
+          description="All The Way gym i Malmös blogginlägg"
+        />
         <Content>
           <p>Det finns ännu inga bloggposter.</p>
         </Content>
@@ -21,7 +24,10 @@ const BlogPostArchive = ({ posts, previousPagePath, nextPagePath }) => {
 
   return (
     <Layout>
-      <Seo title="Alla inlägg" />
+      <Seo
+        title="Alla inlägg"
+        description="All The Way gym i Malmös blogginlägg"
+      />
 
       <Content>
         <h1>Våra blogginlägg</h1>
