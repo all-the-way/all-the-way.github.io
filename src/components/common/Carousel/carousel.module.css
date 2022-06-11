@@ -1,7 +1,7 @@
 .carouselItem {
   position: relative;
   color: var(--white);
-  margin: 40px;
+  margin: 40px 15px;
 }
 
 .carouselItem h3 {
@@ -15,7 +15,7 @@
 
 .content {
   position: absolute;
-  padding: 20px;
+  padding: 15px;
   bottom: 10px;
   margin: 0;
   display: flex;
@@ -49,4 +49,13 @@
 
 .carouselItem h3.bottom {
   top: 40px;
+}
+
+@media (min-width: 767px) {
+  .carouselItem {
+    margin: 40px;
+  }
+  .content {
+    padding: 20px;
+  }
 }

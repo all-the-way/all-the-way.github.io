@@ -89,3 +89,7 @@
     justify-content: flex-start;
   }
 }
+
+:global(.slick-dots) {
+  bottom: -55px;
+}

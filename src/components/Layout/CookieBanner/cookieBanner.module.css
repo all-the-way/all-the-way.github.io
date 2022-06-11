@@ -1,5 +1,6 @@
 .cookieBanner {
   display: flex;
+  flex-direction: column;
   padding: 20px;
   justify-content: space-between;
   padding: 20px 70px;
@@ -13,4 +14,10 @@
 }
 .cookieBanner p {
   margin-bottom: 2px;
+}
+
+@media (min-width: 767px) {
+  .cookieBanner {
+    flex-direction: row;
+  }
 }
