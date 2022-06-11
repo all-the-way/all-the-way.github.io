@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-ansokan-js","path":"/ansokan/","result":{"pageContext":{}},"staticQueryHashes":["3649515864"]}
+{
+    "componentChunkName": "component---src-pages-ansokan-js",
+    "path": "/ansokan/",
+    "result": {"data":{"site":{"siteMetadata":{"title":null}}},"pageContext":{}},
+    "staticQueryHashes": ["1682016598","848497233"]}

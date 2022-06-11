@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkall_the_way_website=self.webpackChunkall_the_way_website||[]).push([[678],{6558:function(e,t,a){a.r(t);var l=a(7294),n=a(2756),i=a(9357),c=a(5190);t.default=function(e){var t=e.data,a=e.location,r=t.site.siteMetadata.title;return l.createElement(n.Z,{location:a,title:r},l.createElement(i.Z,{title:"All The Way Gym"}),l.createElement(c.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-b55480d0c4564162c40f.js.map
