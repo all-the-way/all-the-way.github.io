@@ -10,6 +10,13 @@ import phpImage from "./php.jpg";
 import personalFollowUpImage from "./personlig_uppfoljning.jpeg";
 
 const Carousel = () => {
+  const handleClick = () => {
+    const element = document.getElementById("medlemskap");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <Slider {...settings} style={{ marginTop: 100, marginBottom: 100 }}>
       <CarouselItem image={ptImage} heading="Personlig träning" position="top">
@@ -20,7 +27,7 @@ const Carousel = () => {
           behov och vara en del av din resa för att nå din unika målsättning. Vi
           förstår att du tränar för att leva, du lever inte för att träna.
         </p>
-        <Button>Skaffa PT</Button>
+        <Button onClick={handleClick}>Skaffa PT</Button>
       </CarouselItem>
       <CarouselItem image={teamImage} heading="TEAM-grupper" position="bottom">
         <p>

@@ -10,6 +10,13 @@ import Carousel from "../../common/Carousel";
 import Reviews from "./Reviews";
 
 const Home = () => {
+  const handleClick = () => {
+    const element = document.getElementById("medlemskap");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <>
       <header className={styles.wrapper} id="start">
@@ -78,7 +85,11 @@ const Home = () => {
                 exakt vad du ska göra. Ta beslutet att investera i dig själv så
                 hjälper vi dig med resten.
               </p>
-              <Button light style={{ alignSelf: "flex-start" }}>
+              <Button
+                light
+                style={{ alignSelf: "flex-start" }}
+                onClick={handleClick}
+              >
                 Ansök om medlemskap
               </Button>
             </div>
