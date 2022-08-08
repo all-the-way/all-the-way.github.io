@@ -36,7 +36,7 @@ const Footer = () => (
               </ol>
             </div>
             <div>
-              <h2>Address</h2>
+              <h2>Adress</h2>
               <ol>
                 <li>Djäknegatan 33, 211 35 Malmö</li>
               </ol>
