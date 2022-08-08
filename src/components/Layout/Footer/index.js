@@ -43,7 +43,7 @@ const Footer = () => (
 
               <h2>Telefon</h2>
               <ol>
-                <li>040 86686</li>
+                <li>040-888 69</li>
               </ol>
             </div>
           </div>
